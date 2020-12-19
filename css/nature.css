@@ -1,0 +1,20 @@
+.swamp__cards {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+}
+
+
+.swamp__img img{
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
