@@ -1,0 +1,30 @@
+.swamp__cards{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100wh;
+    /* background-color: #ccc; */
+}
+.swamp__text-title{
+padding-left: 15px;
+padding-right: 15px;
+}
+
+
+.swamp__img img{
+    max-width: 650px;
+    padding: 0  15px 15px;
+}
+
+.swamp__img order{
+order: inherit;
+}
+
+
+
+
+
+
+
+
+
+

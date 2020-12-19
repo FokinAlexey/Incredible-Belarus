@@ -1,6 +1,14 @@
+
+.body {
+    box-sizing: border-box;
+    
+}
+
+
 .header {
-    background-color: #0a223d;
-    background-image: url('/img/header/bg-img3.png');
+    height: 140px;
+    background-color: #c0b2b5;
+    background-image: url('../assets/img/header/bg-img3.png');
     background-repeat: no-repeat;
 }
 
@@ -37,6 +45,7 @@
     transition: all .7s;
     background-color: #d72c16;
 }
+
 
 
 
