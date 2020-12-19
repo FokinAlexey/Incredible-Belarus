@@ -1,0 +1,83 @@
+.now {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 24px 40px;
+  right: 0;
+  bottom: -20px;
+  background-color: #f1f6fd;
+  z-index: 1;
+}
+
+.now__pags {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.now .swiper-pagination-custom {
+  width: 100px;
+}
+
+.now__pags::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  width: 1px;
+  height: 48px;
+  background-color: #0a223d;
+}
+
+.now__pags .swiper-pagination-current, .now__pags .swiper-pagination-total {
+  color: #211f1d;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  color: #0a223d;
+  text-transform: uppercase;
+}
+
+.now__controls {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.now__control {
+	padding: 0;
+	background: 0 0;
+	border: 0;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+  border-radius: 50%;
+  transition: background-color .3s ease;
+}
+
+.now__control i {
+  color: #ffffff;
+}
+
+.now__control--prev {
+  background-color: #0a223d;
+}
+
+.now__control--next {
+  margin-left: 8px;
+  background-color: #0a223d;
+}
+
+.now__control:hover {
+  background-color: #094f9e;
+}
+
+.now__control:hover i {
+  color: #0a223d;
+}

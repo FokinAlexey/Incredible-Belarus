@@ -1,6 +1,9 @@
 .teasers {
   padding-top: 50px;
-  background-color: #f0efea;
+}
+
+.teasers .swiper-container {
+  padding-bottom: 20px;
 }
 
 .teasers__list {
@@ -21,8 +24,9 @@
 .teasers__text {
   margin: 0 0 20px 0;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 26px;
   text-align: center;
+  color: #0b1277;
 }
 
 .teasers__img {
