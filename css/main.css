@@ -1,5 +1,4 @@
+@import './global.css';
 @import './header.css';
-
-
-
-
+@import './teasers.css';
+@import './swiper.css';
