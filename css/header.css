@@ -1,7 +1,7 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #0a223d;
+  background-color: #7db6f7;
 }
 
 .navigation {
@@ -36,7 +36,7 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #fff;
+    color: #14084d;
     padding: 10px;
 }
 .navigation__links li a:hover{
