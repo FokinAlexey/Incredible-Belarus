@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incredible Belarus</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -13,10 +14,12 @@
 <body>
   <header class="header">
     <h1 class="visually-hidden">Incredible Belarus</h1>
-    <div class="inner">
+    <div class="inner container">
       <nav class="navigation">
         <div class="navigation__logo">
-          <a href="index.html"> <img src="./assets/img/header/logo.svg" alt="logo" width="200"></a>
+          <a href="index.html">
+            <img src="./assets/img/header/logo.png" alt="logo" width="150" height="70">
+          </a>
         </div>
         <ul class="navigation__links">
           <li><a class="navigation__link" href="index.html">Главная</a></li>
@@ -29,40 +32,51 @@
   </header>
   <main>
     <section class="teasers">
-      <div class="teasers__content container">
-        <h2 class="teasers__title">Самые уникальные и красивые места Беларуси</h2>
-        <div class="swiper-container">
-          <ul class="teasers__list swiper-wrapper">
-            <li class="teasers__item swiper-slide">
-              <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="750" alt="Фото">
-            </li>
-            <li class="teasers__item swiper-slide">
-              <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="750" alt="Фото">
-            </li>
-            <li class="teasers__item swiper-slide">
-              <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="750" alt="Фото">
-            </li>
-            <li class="teasers__item swiper-slide">
-              <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="750" alt="Фото">
-            </li>
-            <li class="teasers__item swiper-slide">
-              <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="750" alt="Фото">
-            </li>
-          </ul>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+      <h2 class="teasers__title">Самые уникальные и красивые места Беларуси</h2>
+      <div class=" teasers__slider swiper-container">
+        <ul class="teasers__list swiper-wrapper">
+          <li class="teasers__item swiper-slide">
+            <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="750" alt="Фото">
+          </li>
+          <li class="teasers__item swiper-slide">
+            <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="750" alt="Фото">
+          </li>
+          <li class="teasers__item swiper-slide">
+            <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="750" alt="Фото">
+          </li>
+          <li class="teasers__item swiper-slide">
+            <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="750" alt="Фото">
+          </li>
+          <li class="teasers__item swiper-slide">
+            <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="750" alt="Фото">
+          </li>
+        </ul>
+        <div class="teasers__now now">
+          <div class="now__pags"></div>
+          <div class="now__controls">
+            <button class="now__control now__control--prev" type="button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="now__control now__control--next" type="button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
-        <p class="teasers__text">
-          Беларусь – это небольшая страна в сердце Европы. Здесь нет изобилия архитектурных памятников старины, они
-          разрушены безжалостным военным временем. Но те, что сохранились, являются жемчужинами нашей страны.
-        </p>
-        <p class="teasers__text">
-          Беларусь – край лесов, озер, зубров и аистов. Она останется в сердце чистыми городами, уютными деревнями,
-          неповторимой заповедной природой, старинными местами, театрами и музеями.
-        </p>
       </div>
     </section>
+    <!-- <section>
+      <h2></h2>
+      <p class="teasers__text">
+        Беларусь – это небольшая страна в сердце Европы. Здесь нет изобилия архитектурных памятников старины, они
+        разрушены безжалостным военным временем. Но те, что сохранились, являются жемчужинами нашей страны.
+      </p>
+      <p class="teasers__text">
+        Беларусь – край лесов, озер, зубров и аистов. Она останется в сердце чистыми городами, уютными деревнями,
+        неповторимой заповедной природой, старинными местами, театрами и музеями.
+      </p>
+    </section> -->
   </main>
+  <script src="https://kit.fontawesome.com/2e224a62e7.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
