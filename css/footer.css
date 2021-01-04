@@ -1,0 +1,10 @@
+.footer {
+    padding:20px;
+    background-color:#7db6f7;
+    display: flex;
+    justify-content: space-around;    
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
