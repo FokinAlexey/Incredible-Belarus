@@ -62,22 +62,22 @@
 }
 
 .now__control i {
-  color: #0a223d;
+  color:#fff;
 }
 
 .now__control--prev {
-  background-color: #669cd6;
+  background-color: #04640c;
 }
 
 .now__control--next {
   margin-left: 8px;
-  background-color: #669cd6;
+  background-color: #04640c;
 }
 
 .now__control:hover {
-  background-color: #0a223d;
+  background-color: #02290e;
 }
 
 .now__control:hover i {
-  color: #ffffff;
+  color: #fff;
 }

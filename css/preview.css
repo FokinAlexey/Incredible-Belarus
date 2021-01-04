@@ -104,6 +104,6 @@
 
 .preview__button:focus,
 .preview__button:hover {
-  background-color: rgb(3, 39, 15);
+  background-color: #042b07;
   transition: all .6s ease;
 }
