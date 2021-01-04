@@ -57,10 +57,9 @@
 
 .preview__link:focus .preview__item-title,
 .preview__link:hover .preview__item-title { 
-  font-size: 28px;
-  line-height: 35px;
   text-decoration: underline;
   text-decoration-color: rgba(255,255,255,.3);
+  color: #36e3f7;
 }
 
 .preview__img-wrapper {
@@ -104,6 +103,33 @@
 
 .preview__button:focus,
 .preview__button:hover {
-  background-color: rgb(3, 39, 15);
+  background-color: #042b07;
   transition: all .6s ease;
+}
+
+@media (max-width: 767px) {
+  .preview {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .preview__title {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .preview__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .preview__item {
+    width: 100%;
+  }
+
+  .preview__item-title {
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
