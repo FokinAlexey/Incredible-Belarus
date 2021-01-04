@@ -46,6 +46,11 @@
     font-size: 27px;
 }
 
+.socialMedia {
+    display: flex;
+    align-items: center;
+}
+
 .copyright {
     text-align: center;
     color:#14084d;
