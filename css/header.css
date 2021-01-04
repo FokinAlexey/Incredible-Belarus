@@ -1,7 +1,7 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #538257;
+  background-color: #7db6f7;
 }
 
 .navigation {
@@ -40,7 +40,7 @@
     padding: 10px;
 }
 .navigation__links li a:hover{
-    color: #02290e;
+    color: #14084d;
     /* border-radius: 10px; */
     transition: all .7s;
     /* background-color: #d72c16; */

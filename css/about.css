@@ -11,3 +11,17 @@
   line-height: 35px;
   text-align: center;
 }
+
+@media (max-width: 1023px) {
+  .about__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}

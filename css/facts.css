@@ -58,3 +58,21 @@
   opacity: 0.6;
   transition: all .3s ease;
 }
+
+@media (max-width: 767px) {
+  .facts {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .facts__title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .facts__item {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+}
+}

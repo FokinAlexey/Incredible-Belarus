@@ -20,3 +20,9 @@
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 767px) {
+  .teasers__list  {
+    margin-bottom: 15px;
+  }
+}

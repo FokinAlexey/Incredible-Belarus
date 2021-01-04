@@ -81,3 +81,24 @@
 .now__control:hover i {
   color: #fff;
 }
+
+@media(max-width: 767px) {
+  .now {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #bcd9fb;
+  }
+
+  .now__pags::before {
+    height: 20px;
+  }
+
+  .now__control {
+    width: 40px;
+    height: 40px;
+  }
+}
