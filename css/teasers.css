@@ -1,28 +1,19 @@
 .teasers {
-  padding-top: 50px;
-  background-color: #f0efea;
+  background-color: #f1f6fd;
+}
+
+.teasers .swiper-container {
+  margin-bottom: 0;
+}
+
+.teasers .swiper-container {
+  padding-bottom: 20px;
 }
 
 .teasers__list {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.teasers__title {
-  margin: 0 0 50px 0;
-  font-size: 35px;
-  line-height: 40px;
-  color: #a10115;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.teasers__text {
-  margin: 0 0 20px 0;
-  font-size: 20px;
-  line-height: 22px;
-  text-align: center;
 }
 
 .teasers__img {
