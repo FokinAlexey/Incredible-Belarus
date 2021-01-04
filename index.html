@@ -193,25 +193,36 @@
 
     </section>
 
-
-
   </main>
+
   <footer class="footer">
-    <form class="contact_form">
-      <h2>Связаться с администрацией:</h2>
-      <label for="name">Ваше имя:</label> <br>
-      <input type="text" id="name" name="name" value="Введите ваше имя"> <br>
-      <label for="email">Ваш email:</label> <br>
-      <input type="text" id="email" name="email" value="Введите ваш email"> <br>
-      <label for="message">Введите сообщение:</label> <br>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea> <br> <br>
-      <input type="submit" value="Отправить">
-    </form>
-    <section class="contacts">
-      <h2>Наши контакты:</h2>
-      <p>email: ouremail@example.com <br> телефон: +37529******** <br> адрес: г. Минск Дворец Независимости</p>
-    </section>
+    <nav class="footer__navigation">
+      <ul class="footer__navigation__links">
+        <li><a class="navigation__link" href="index.html">Главная</a></li>
+        <li><a class="navigation__link" href="nature.html">Природа</a></li>
+        <li><a class="navigation__link" href="#"> Замки</a></li>
+        <li><a class="navigation__link" href="#">ВОВ</a></li>
+      </ul>
+    </nav>
+    <div class="footer__container">
+      <form class="contact_form">
+        <h2 class="footerH2">Связаться с администрацией:</h2>
+        <label for="name">Ваше имя:</label> <br>
+        <input type="text" id="name" name="name" value="Введите ваше имя"> <br>
+        <label for="email">Ваш email:</label> <br>
+        <input type="text" id="email" name="email" value="Введите ваш email"> <br>
+        <label for="message">Введите сообщение:</label> <br>
+        <textarea name="message" id="message" cols="30" rows="8"></textarea> <br> <br>
+        <input type="submit" value="Отправить">
+      </form>
+      <section class="contacts">
+        <h2 class="footerH2">Наши контакты:</h2>
+        <p>email: ouremail@example.com <br> телефон: +37529******** <br> адрес: г. Минск Дворец Независимости</p>
+      </section>
+    </div>
+    <div class="copyright"> © 2020—2021 Incredible Belarus</div>
   </footer>
+
   <script src="https://kit.fontawesome.com/2e224a62e7.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
