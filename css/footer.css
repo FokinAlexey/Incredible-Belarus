@@ -28,12 +28,17 @@
     line-height: 17px;
     text-transform: uppercase;
     color: #14084d;
-    padding: 70px;    
+    padding: 60px;    
 }
 
 .footer__navigation__links li a:hover{
     color: #Ec1f46;    
     transition: all .7s;  
+}
+
+.contact_form {
+    padding: 25px;    
+    border: 1.5px solid black;
 }
 
 .contacts {
@@ -46,9 +51,13 @@
     font-size: 27px;
 }
 
-.socialMedia {
+.socialMedia {    
     display: flex;
     align-items: center;
+}
+
+.mediaIMG {
+    padding: 3px;
 }
 
 .copyright {
