@@ -36,11 +36,11 @@
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #14084d;
+    color: #fff;
     padding: 10px;
 }
 .navigation__links li a:hover{
-    color: #Ec1f46;
+    color: #14084d;
     /* border-radius: 10px; */
     transition: all .7s;
     /* background-color: #d72c16; */
