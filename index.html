@@ -192,7 +192,17 @@
       <iframe src="https://www.google.com/maps/d/embed?mid=1yRrGTJCmAuDjCn5YwNWumxS5Uf5xJ3Qr" width=100%
         height="680"></iframe>
     </section>
-
+    <div class="subscribe">
+      <div class="subscribe__content container">
+        <h2 class="subscribe__title">Подпишитесь на наши новости!</h2>
+        <form class="subscribe__form">
+          <div class="subscribe__input">
+            <input id="email-subscribe" name="email" type="email" placeholder="Введите Ваш email" required>
+          </div>
+          <button class="subscribe__button button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
@@ -239,7 +249,16 @@
     </div>
     <div class="copyright"> © 2020—2021 Incredible Belarus</div>
   </footer>
-
+    <!-- Сообщение об успешной подписке -->
+    <div class="success">
+      <div class="success__overlay">
+        <div class="success__message">
+          <b>Спасибо!</b>
+          <p>Вы подписались на нашу новостную рассылку.</p>
+          <button class="success__closer button button--closer" type="button" aria-label="Закрыть окно"></button>
+        </div>
+      </div>
+    </div>
   <script src="https://kit.fontawesome.com/2e224a62e7.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script.js"></script>

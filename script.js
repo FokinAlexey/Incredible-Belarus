@@ -1,5 +1,56 @@
 "use strict"
 
+const ESC_KEYCODE = 27;
+const successMessage = document.querySelector('.success');
+const successCloseButton = document.querySelector('.success__closer');
+const subscribeForm = document.querySelector('.subscribe__form');
+
+// логика показа-скрытия popup с сообщением о подписке
+
+const closeByEsc = () => {
+  document.addEventListener('keydown', (evt) => {
+    if (evt.keyCode === ESC_KEYCODE) {
+      successMessageCloserHandler();
+    }
+  });
+};
+
+const CloseOnClickOutsideHandler = (e) => {
+  let target = e.target;
+
+  if (target.classList.contains('success__overlay')) {
+    successMessageCloserHandler();
+  }
+};
+
+const successMessageCloserHandler = () => {
+  successMessage.classList.remove('success--show');
+  // enableScrolling();
+};
+
+const successMessageOpenHandler = () => {
+  if (successMessage) {
+    successMessage.classList.add('success--show');
+    // disableScrolling();
+  }
+
+  successCloseButton.addEventListener('click', successMessageCloserHandler);
+  closeByEsc();
+  document.addEventListener('click', CloseOnClickOutsideHandler);
+};
+
+const resetForm = () => {
+  subscribeForm.reset();
+};
+
+const submitSubscribeForm = (evt) => {
+  evt.preventDefault();
+  successMessageOpenHandler();
+  resetForm();
+};
+
+// слайдер на главной странице
+
 const initSliderTeasers = () => {
   let teasersSlider = document.querySelector('.teasers__slider');
 
@@ -32,6 +83,7 @@ const initSliderTeasers = () => {
 };
 
 initSliderTeasers();
+subscribeForm.addEventListener('submit', submitSubscribeForm);
 
 
 
