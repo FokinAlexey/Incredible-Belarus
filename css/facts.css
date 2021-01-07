@@ -2,7 +2,7 @@
   padding-top: 50px;
   font-size: 20px;
   line-height: 24px;
-  color:#0a223d;
+  color: #0a223d;
 }
 
 .facts__title {
@@ -11,7 +11,7 @@
   line-height: 40px;
   text-align: center;
   text-transform: uppercase;
-  color: #0d5512;
+  color: #0b3361;
 }
 
 .facts__list {
@@ -39,7 +39,7 @@
 .facts__item i {
   margin-bottom: 15px;
   font-size: 40px;
-  color: #0d5512;
+  color: #7db6f7;
 }
 
 .facts__text {
@@ -49,7 +49,7 @@
 }
 
 .facts a {
-  color: #30b91d;
+  color: #7db6f7;
   transition: all .3s ease;
 }
 

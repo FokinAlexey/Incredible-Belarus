@@ -1,0 +1,142 @@
+.success {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+}
+
+.success--show {
+  display: block;
+}
+
+.success__message {
+  position: relative;
+  box-sizing: border-box;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  padding: 55px;
+  transform: translate(-50%, -50%);
+  color: #190774;
+  background-color: #fff;
+}
+
+.success__message i {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.success__message b {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.success p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.success__closer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 3;
+  background-color: transparent;
+  overflow: visible;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  transition: .9s;
+}
+
+.success__closer::after,
+.success__closer::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 3px;
+  width: 24px;
+  height: 2px;
+  background-color: #14084d;
+}
+
+.success__closer::before {
+  transform: rotate(45deg);
+}
+
+.success__closer::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.success__closer:focus, 
+.success__closer:hover {
+  outline: 0;
+  box-shadow: 0 0 10px 3px #2c36f2;
+}
+
+.success__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 110;
+  background-color: rgba(59, 67, 76, 0.9);
+}
+
+@media (max-width: 1023px) {
+  .success__message {
+    width: 678px;
+  }
+
+  .success__message b {
+    text-align: center;
+  }
+
+  .success__closer {
+    top: 30px;
+    right: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  .success__message {
+    width: 80%;
+    padding: 60px 20px;
+  }
+
+  .success__message b {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .success p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .success__closer {
+    top: 6px;
+    right: 8px;
+  }
+
+  .success__closer::after,
+  .success__closer::before {
+    width: 20px;
+    right: 5px;
+  }
+}
