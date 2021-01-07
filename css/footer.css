@@ -118,6 +118,7 @@
 
 @media (max-width: 600px) {
 
-    .footer__navigation {
-        display: none;
-      }
+  .footer__navigation {
+    display: none;
+  }
+}
