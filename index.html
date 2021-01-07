@@ -201,35 +201,45 @@
   </main>
 
   <footer class="footer">
-    <nav class="footer__navigation">
-      <ul class="footer__navigation__links">
-        <li><a class="navigation__link" href="index.html">Главная</a></li>
-        <li><a class="navigation__link" href="nature.html">Природа</a></li>
-        <li><a class="navigation__link" href="#"> Замки</a></li>
-        <li><a class="navigation__link" href="#">ВОВ</a></li>
-      </ul>
-    </nav>
     <div class="footer__container">
+      <nav class="footer__navigation">
+        <div class="navigation__logo">
+          <a href="index.html">
+            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+          </a>
+        </div>
+        <ul class="footer__navigation__links">
+          <li><a class="footer__navigation__link" href="index.html">Главная</a></li>
+          <li><a class="footer__navigation__link" href="nature.html">Природа</a></li>
+          <li><a class="footer__navigation__link" href="#"> Замки</a></li>
+          <li><a class="footer__navigation__link" href="#">ВОВ</a></li>
+        </ul>
+      </nav>
       <form class="contact_form">
-        <h2 class="footerH2">Связаться с администрацией:</h2>
-        <label for="name">Ваше имя:</label> <br>
-        <input type="text" id="name" name="name" value="Введите ваше имя"> <br>
-        <label for="email">Ваш email:</label> <br>
-        <input type="text" id="email" name="email" value="Введите ваш email"> <br>
-        <label for="message">Введите сообщение:</label> <br>
-        <textarea name="message" id="message" cols="30" rows="8"></textarea> <br> <br>
-        <input type="submit" value="Отправить">
+        <h3 class="footerH3">Связаться с администрацией:</h3>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+        <label for="email">Ваш email:</label>
+        <input type="text" id="email" name="email" placeholder="Введите ваш email" required>
+        <label for="message">Введите сообщение:</label>
+        <textarea name="message" id="message" cols="30" rows="8" required></textarea>
+        <button type="submit" id="btn" name="btn">Отправить</button>
       </form>
       <section class="contacts">
-        <h2 class="footerH2">Наши контакты:</h2>
-        <p>email: ouremail@example.com <br> телефон: +37529******** <br> адрес: г. Минск Дворец Независимости</p>
-        <h2 class="footerH2">Социальные сети:</h2>
-        <div class="socialMedia">
-          <img src="assets/img/social media/facebook.png" alt="IMG" class="mediaIMG">
-          <img src="assets/img/social media/Instagram.png" alt="IMG" class="mediaIMG">
-          <img src="assets/img/social media/twitter.png" alt="IMG" class="mediaIMG">
-          <img src="assets/img/social media/youtube.png" alt="IMG" class="mediaIMG">
-        </div>
+        <h3 class="footerH3">Наши контакты:</h3>
+        <p><b>email:</b> ouremail@gmail.com <br> <b>Телефон:</b> +37529******** <br> <b>Адрес:</b> г. Минск Дворец
+          Независимости</p>
+        <h3 class="footerH3">Социальные сети:</h3>
+        <ul class="socialMedia">
+          <li><a href="#" onclick="return false" ;><img src="assets/img/social media/facebook.png" alt="IMG"
+                class="mediaIMG"></a></li>
+          <li><a href="#" onclick="return false" ;><img src="assets/img/social media/Instagram.png" alt="IMG"
+                class="mediaIMG"></a></li>
+          <li><a href="#" onclick="return false" ;><img src="assets/img/social media/twitter.png" alt="IMG"
+                class="mediaIMG"></a></li>
+          <li><a href="#" onclick="return false" ;><img src="assets/img/social media/youtube.png" alt="IMG"
+                class="mediaIMG"></a></li>
+        </ul>
       </section>
     </div>
     <div class="copyright"> © 2020—2021 Incredible Belarus</div>

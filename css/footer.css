@@ -5,62 +5,119 @@
     background-color:#7db6f7;    
 }
 
-/* .footer__navigation {
-    display: flex;
-    justify-content: space-between;    
-} */
-
 .footer__container {
     padding: 10px;
     display: flex;
     justify-content: space-around;    
+    flex-wrap: wrap;
     }
 
-.footer__navigation__links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;       
+.footer__navigation__link {
+    display: block;
+    padding: 5px;
 }
 
-.footer__navigation__links li a {
+.footer__navigation__links {    
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;          
+}
+
+.footer__navigation__links li a {           
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #14084d;
-    padding: 60px;    
+    color: #fff;         
 }
 
 .footer__navigation__links li a:hover{
-    color: #Ec1f46;    
+    color: #14084d;   
     transition: all .7s;  
 }
 
 .contact_form {
-    padding: 25px;    
-    border: 1.5px solid black;
+    display: flex;
+    flex-direction: column;    
+    padding: 25px;   
+    margin: 3px; 
+    border: 1.5px solid black;           
+}
+
+#name {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;    
+}
+
+#email {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+#message {
+    margin: 5px;
+    border-radius: 7px; 
+}
+
+#btn {    
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0.1px;
+    display: block;
+    width: 120px;
+    margin: 25px auto 0;
+    background: #fff; 
+    color: #14084d;   
+    font-size: 14px;    
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#btn:hover {    
+    box-shadow:1px 1px 1px #14084d; 
+    transform: scale(1.1,1.1);
 }
 
 .contacts {
-    padding: 25px;    
+    padding: 20px;   
+    margin: 3px; 
     border: 1.5px solid black;
 }
 
-.footerH2 {
-    color:#14084d;
-    font-size: 27px;
+.footerH3 {
+    color: #fff;  
+    font-size: 20px;
+    text-align: center;
 }
 
 .socialMedia {    
+    padding: 0;
+    list-style-type: none;    
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
-.mediaIMG {
-    padding: 3px;
+.mediaIMG {    
+    padding: 5px;
+    width: 50px;
+    height: 50px;    
+}
+
+.mediaIMG:hover {
+    transform: scale(1.2,1.2);
+    opacity: 0.6;
 }
 
 .copyright {
     text-align: center;
-    color:#14084d;
+    color: #fff;  
 }
+
+@media (max-width: 600px) {
+
+    .footer__navigation {
+        display: none;
+      }
