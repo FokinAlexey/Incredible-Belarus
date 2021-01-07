@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #7db6f7;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .6s ease;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #0a223d;
+  transition: all .6s ease;
+}
