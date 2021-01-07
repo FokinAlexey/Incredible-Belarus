@@ -1,4 +1,5 @@
 @import './global.css';
+@import './button.css';
 @import './header.css';
 @import './teasers.css';
 @import './footer.css';
@@ -9,3 +10,5 @@
 @import './preview.css';
 @import './subscribe.css';
 @import './success.css';
+@import './nesvizh-block.css';
+@import './legend.css';

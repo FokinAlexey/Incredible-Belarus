@@ -4,6 +4,8 @@ const ESC_KEYCODE = 27;
 const successMessage = document.querySelector('.success');
 const successCloseButton = document.querySelector('.success__closer');
 const subscribeForm = document.querySelector('.subscribe__form');
+const legendButton = document.querySelector('.legend__button');
+const legendBlock = document.querySelector('.legend__content');
 
 // логика показа-скрытия popup с сообщением о подписке
 
@@ -49,6 +51,21 @@ const submitSubscribeForm = (evt) => {
   resetForm();
 };
 
+//логика показа блока legendBlock 
+
+const toggleLegendButton = () => {
+  if (legendBlock.classList.contains('legend__content--closed')) {
+    legendBlock.classList.remove('legend__content--closed');
+    legendBlock.classList.add('legend__content--opened');
+    legendButton.textContent ='Cвернуть';
+
+  } else {
+    legendBlock.classList.add('legend__content--closed');
+    legendBlock.classList.remove('legend__content--opened');
+    legendButton.textContent ='Подробнее';
+  }
+};
+
 // слайдер на главной странице
 
 const initSliderTeasers = () => {
@@ -83,8 +100,13 @@ const initSliderTeasers = () => {
 };
 
 initSliderTeasers();
-subscribeForm.addEventListener('submit', submitSubscribeForm);
 
+if(subscribeForm) {
+  subscribeForm.addEventListener('submit', submitSubscribeForm);
+}
 
+if(legendButton) {
+  legendButton.addEventListener('click', toggleLegendButton);
+}
 
 {/* <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3740b177900d2b9b2ddf5466a5e66db02cbcb3c4b3afe5fa779a45b70551ce2&amp;width=476&amp;height=391&amp;lang=ru_RU&amp;scroll=true"></script> */ }
