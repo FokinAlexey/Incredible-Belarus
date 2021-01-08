@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .mir-castle__about-text {
@@ -46,4 +47,34 @@
 
 .mir-castle .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;
+}
+
+@media (max-width: 1023px) {
+  .mir-castle__about {
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  .mir-castle__about-slider {
+    width: 100%;
+  }
+
+  .mir-castle__about-text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  .mir-castle__item {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .mir-castle__about-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

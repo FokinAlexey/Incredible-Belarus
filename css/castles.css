@@ -19,7 +19,7 @@
 } 
 
 @media (max-width: 767px) {
-  .castles__title__title {
+  .castles__title {
     margin-bottom: 20px;
     font-size: 25px;
     line-height: 35px;
