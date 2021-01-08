@@ -99,7 +99,96 @@ const initSliderTeasers = () => {
   });
 };
 
+// слайдер на странице замков
+
+const initSliderCastles = () => {
+  let mirCastleSlider = document.querySelector('.mir-castle__slider');
+
+  if (!mirCastleSlider) {
+    return;
+  }
+
+  const mirSwiper = new Swiper('.mir-castle__slider', {
+    nested: true,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+};
+
+// табы на сранице замков
+
+const tabs = document.querySelectorAll('.story__tab-link');
+const storyBlockContent = document.querySelector('.story__list');
+
+const tabElementClick = () => {
+
+  let hideAllTabs = () => {
+    tabs.forEach((tab) => {
+      tab.parentElement.classList.remove('story__tab-item--show');
+    });
+  };
+
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      hideAllTabs();
+      tab.parentElement.classList.add('story__tab-item--show');
+      storyBlockContent.style.transform = `translateX(${-(i * 100)}%)`;
+    });
+  });
+};
+
+//переключение табов на странице замков на слайдер
+
+const addSwiperStory = () => {
+  let storySlider = document.querySelector('.swiper-story');
+
+  if (!storySlider) {
+    return;
+  }
+  const breakpoint = window.matchMedia(`(min-width:1024px)`);
+  let swiperStory;
+
+  const breakpointChecker = () => {
+
+    if (breakpoint.matches === true) {
+      if (swiperStory) {
+        swiperStory.destroy(true, true);
+      }
+      return;
+    } else if (breakpoint.matches === false) {
+      return enableSwiper();
+    }
+  };
+
+  const enableSwiper = () => {
+    swiperStory = new Swiper('.swiper-story', {
+      loop: true,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination-story',
+        clickable: false
+      },
+    });
+  };
+
+  breakpoint.addListener(breakpointChecker);
+
+  breakpointChecker();
+};
+
+
 initSliderTeasers();
+initSliderCastles();
+addSwiperStory();
 
 if(subscribeForm) {
   subscribeForm.addEventListener('submit', submitSubscribeForm);
@@ -107,6 +196,10 @@ if(subscribeForm) {
 
 if(legendButton) {
   legendButton.addEventListener('click', toggleLegendButton);
+}
+
+if (tabs) {
+  tabElementClick();
 }
 
 {/* <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3740b177900d2b9b2ddf5466a5e66db02cbcb3c4b3afe5fa779a45b70551ce2&amp;width=476&amp;height=391&amp;lang=ru_RU&amp;scroll=true"></script> */ }
