@@ -139,7 +139,8 @@
 
 @media (max-width: 1023px) {
   .story {
-    overflow: visible;
+    width: 100%;
+    /* overflow: visible; */
   }
 
   .story__list {
