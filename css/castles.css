@@ -1,0 +1,27 @@
+.castles__title {
+  position: relative;
+  margin: 0 0 50px 0;
+  padding-bottom: 20px;
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #0b3361;
+}
+
+.castles__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12%;
+  height: 2px;
+  background-color: #7db6f7;
+} 
+
+@media (max-width: 767px) {
+  .castles__title__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

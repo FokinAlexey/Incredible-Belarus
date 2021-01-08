@@ -1,0 +1,49 @@
+.mir-castle {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.mir-castle__about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mir-castle__about-text {
+  width: 50%;
+  padding: 0 15px 0 0;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #0a223d;
+}
+
+.mir-castle__about-slider {
+  width: 50%;
+}
+
+.mir-castle__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mir-castle__img {
+  width: 100%;
+  height: auto;
+}
+
+.mir-castle .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #0e52bd;
+  opacity: 1;
+}
+
+.mir-castle .swiper-pagination-bullet-active {
+  background: #07164f;
+}
+
+.mir-castle .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px;
+}

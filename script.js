@@ -99,7 +99,30 @@ const initSliderTeasers = () => {
   });
 };
 
+const initSliderCastles = () => {
+  let mirCastleSlider = document.querySelector('.mir-castle__slider');
+
+  if (!mirCastleSlider) {
+    return;
+  }
+
+  const mirSwiper = new Swiper('.mir-castle__slider', {
+    nested: true,
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+};
+
 initSliderTeasers();
+initSliderCastles();
 
 if(subscribeForm) {
   subscribeForm.addEventListener('submit', submitSubscribeForm);
