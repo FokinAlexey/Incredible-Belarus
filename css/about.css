@@ -6,10 +6,18 @@
 }
 
 .about__text {
-  margin: 0 0 25px 0;
-  font-size: 28px;
-  line-height: 35px;
+  margin: 0 0 20px 0;
+  font-family: 'Xanh Mono', monospace;
+  font-size: 22px;
+  line-height: 30px;
   text-align: center;
+  color: #59115b;
+  font-style: italic;
+}
+
+.about__text-block {
+  width: 70%;
+  margin: 0 auto;
 }
 
 @media (max-width: 1023px) {
