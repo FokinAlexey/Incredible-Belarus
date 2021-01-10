@@ -3,9 +3,11 @@
 }
 h2{
     font-size: 40px;
+    line-height: 40px;
 }
 h3{
     font-size: 27px;
+    line-height: 30px;
 }
 
 .swamp__cards{
@@ -14,8 +16,8 @@ h3{
     max-width: 100wh;
 }
 .swamp__text-title{
-padding-left: 15px;
-padding-right: 15px;
+padding: 15px 25px;
+
 }
 .swamp__text-text{
     /* 
@@ -46,7 +48,7 @@ order: inherit;
 
 @media (max-width: 1100px) {
     .swamp__img img{
-        max-width: 70vw; 
+        max-width: 80vw; 
         padding: 0  15px 15px;
         margin: 0 auto;
     } 
@@ -54,19 +56,24 @@ order: inherit;
         display: block;
         
     }
-    .swamp__text-text{
-        text-align: center;
-    }
-}
-
-
-@media (max-width: 800px) {
-    .swamp__img img{
-        max-width: 90vw; 
-        
-    } 
     
 }
+
+
+@media (max-width: 767px) {
+    .swamp__img img{
+        max-width: 90vw;
+        padding: 10px 0;
+        margin: 0 auto; 
+        
+
+    }
+    swamp__text-title {
+        padding: 15px 0px;
+    }
+    
+}
+
 
 
 
