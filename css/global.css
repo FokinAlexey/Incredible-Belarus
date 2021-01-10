@@ -6,6 +6,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-weight: 400;
+  font-family: "Oswald";
+  font-style: normal;
+  font-display: swap;
+  src: local("Oswald Regular"), url("../assets/fonts/oswaldregular.woff2") format("woff2"), url("../assets/fonts/oswaldregular.woff") format("woff");
+}
+
 body {
   min-width: 100%;
   margin: 0;
@@ -42,10 +50,10 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 
