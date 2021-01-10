@@ -1,17 +1,30 @@
+*{
+    font-size: 16px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 27px;
+}
+
 .swamp__cards{
     display: flex;
     justify-content: space-between;
     max-width: 100wh;
-    /* background-color: #ccc; */
 }
 .swamp__text-title{
 padding-left: 15px;
 padding-right: 15px;
 }
+.swamp__text-text{
+    /* 
+    align-items: stretch; */
+}
 
 
 .swamp__img img{
-    max-width: 35vw;
+    max-width: 40vw;
     padding: 0  15px 15px;
 }
 
@@ -30,6 +43,30 @@ order: inherit;
     transition: all .3s ease;
 }
 
+
+@media (max-width: 1100px) {
+    .swamp__img img{
+        max-width: 70vw; 
+        padding: 0  15px 15px;
+        margin: 0 auto;
+    } 
+    .swamp__cards{
+        display: block;
+        
+    }
+    .swamp__text-text{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .swamp__img img{
+        max-width: 90vw; 
+        
+    } 
+    
+}
 
 
 
