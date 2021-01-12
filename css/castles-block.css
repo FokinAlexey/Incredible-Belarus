@@ -38,6 +38,11 @@
 
 .castles-block__img {
   width: 40%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.castles-block__img--last {
+  margin-left: auto;
 }
 
 .castles-block__img img {
@@ -46,14 +51,40 @@
 }
 
 .castles-block__text {
-  width: 60%;
+  width: 100%;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0 15px;
+  margin: 0 0 20px 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   color: #0a223d;
+}
+
+.castles-block__info {
+  margin: 0 0 20px 0;
+  padding: 20px 20px 0 20px;
+  background-color: #dee8fb;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .8), 23px 0 20px -23px rgba(0, 0, 0, .8), 0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.castles-block__info-address, 
+.castles-block__info-tell {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.castles-block__info-address i, 
+.castles-block__info-tell i {
+  margin-right: 20px;
+  font-size: 25px;
+  color: #0b3361;
+}
+
+.castles-block__info-tell a:focus,
+.castles-block__info-tell a:hover {
+  color: #0b3361;
 }
 
 @media (max-width: 1023px) {
