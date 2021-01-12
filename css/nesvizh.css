@@ -4,17 +4,6 @@
   padding-top: 30px;
 }
 
-.nesvizh__title {
-  margin-bottom: 25px;
-  padding: 0;
-  text-transform: none;
-  color: #6b1ba2;
-}
-
-.nesvizh__title::after {
-  display: none;
-}
-
 .nesvizh__list {
   margin: 0;
   padding: 0;

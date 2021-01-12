@@ -41,6 +41,10 @@
   margin-left: auto;
 }
 
+.castles-block__img--full {
+  width: 100%;
+}
+
 .castles-block__img img {
   width: 100%;
   height: auto;
