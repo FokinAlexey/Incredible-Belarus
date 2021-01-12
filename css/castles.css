@@ -19,6 +19,18 @@
   background-color: #7db6f7;
 } 
 
+.castles__title--subtitle {
+  margin-bottom: 25px;
+  padding: 0;
+  text-transform: none;
+  text-align: center;
+  color: #0f0771;
+}
+
+.castles__title--subtitle::after {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .castles__title {
     margin-bottom: 20px;
