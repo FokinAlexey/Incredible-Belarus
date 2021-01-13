@@ -1,0 +1,107 @@
+.mir {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.mir__intro {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mir__intro-text {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0a223d;
+}
+
+.mir__facts {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.mir__facts-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0 0 0 120px;
+  list-style: none;
+}
+
+.mir__facts-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+  box-sizing: border-box;
+  min-height: 210px;
+  margin: 0 30px 30px 0;
+  padding: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.mir__facts-item p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666;
+}
+
+.mir__facts-item i {
+  font-size: 30px;
+  color: #00b2ff;
+  margin-bottom: 15px;
+}
+
+.mir__facts-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #00b2ff;
+}
+
+.mir__facts-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #ebebeb;
+}
+
+.mir__facts-item:hover {
+  background-color: #00b2ff;
+}
+
+.mir__facts-item:hover p,
+.mir__facts-item:hover i {
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .mir__facts-list {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .mir__intro {
+    width: 100%;
+    margin: 0;
+  
+  }
+  .mir__intro-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .mir__facts-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
