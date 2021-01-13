@@ -57,12 +57,12 @@ const toggleLegendButton = () => {
   if (legendBlock.classList.contains('legend__content--closed')) {
     legendBlock.classList.remove('legend__content--closed');
     legendBlock.classList.add('legend__content--opened');
-    legendButton.textContent ='Cвернуть';
+    legendButton.textContent = 'Cвернуть';
 
   } else {
     legendBlock.classList.add('legend__content--closed');
     legendBlock.classList.remove('legend__content--opened');
-    legendButton.textContent ='Подробнее';
+    legendButton.textContent = 'Подробнее';
   }
 };
 
@@ -190,11 +190,11 @@ initSliderTeasers();
 initSliderCastles();
 addSwiperStory();
 
-if(subscribeForm) {
+if (subscribeForm) {
   subscribeForm.addEventListener('submit', submitSubscribeForm);
 }
 
-if(legendButton) {
+if (legendButton) {
   legendButton.addEventListener('click', toggleLegendButton);
 }
 
