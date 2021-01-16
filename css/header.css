@@ -93,6 +93,7 @@
     
       cursor: pointer;
       z-index: 5;
+      top: 40px;
   }
     
   .menu__btn > span,
