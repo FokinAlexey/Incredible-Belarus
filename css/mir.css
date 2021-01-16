@@ -38,7 +38,7 @@
   margin: 0 30px 30px 0;
   padding: 20px;
   background-color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .mir__facts-item p {
@@ -67,13 +67,14 @@
 .mir__facts-item::after {
   content: "";
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   border: 1px solid #ebebeb;
 }
-
+/* 
 .mir__facts-item:hover {
   background-color: #00b2ff;
 }
@@ -81,7 +82,7 @@
 .mir__facts-item:hover p,
 .mir__facts-item:hover i {
   color: #fff;
-}
+} */
 
 @media (max-width: 1023px) {
   .mir__facts-list {
