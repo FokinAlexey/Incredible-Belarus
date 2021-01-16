@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
 </head>
 
 <body>
@@ -42,6 +47,12 @@
 
 
     <section class="swamp">
+
+        <div class="castles-block__teaser">
+            <img src="./assets/img/nature/nature_main_1920.jpg" alt="Фото" width="1920" height="950">
+            <h2 class="castles-block__title">Природа Беларуси</h2>
+        </div>
+
         <div class="container">
             <div class="swamp__inner">
                 <h2 class="swamp__title"> Белорусские болота - легкие страны</h2>
@@ -90,8 +101,13 @@
                 <!-- <h2 class="swamp__title"></h2> -->
                 <!-- <p> </p> -->
                 <div class="swamp__cards">
-                    <div class="swamp__img order">
-                        <img src="./assets/img/nature/swamp-bird.jpg" alt="">
+                    <div class="swamp__img slick__slide">
+
+                        <div><img src="./assets/img/nature/swamp-bird.jpg" alt="фотография "></div>
+                        <!-- <div><img src="./assets/img/nature/swamp_1280-1.jpg" alt="фотография "></div>
+                        <div><img src="./assets/img/nature/swamp_1280-2.jpg" alt="фотография "></div>
+                        <div><img src="./assets/img/nature/swamp_1280-3.jpg" alt="фотография "></div> -->
+
                     </div>
                     <div class="swamp__text-title">
                         <h3>ОЛЬМАНСКИЕ БОЛОТА</h3>
@@ -157,6 +173,21 @@
 
                 </div>
     </section>
+    <div class="swamp__img slick__slider">
+
+        <div><img src="./assets/img/nature/swamp-bird.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-1.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-2.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-3.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-4.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-5.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-6.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-7.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-8.jpg" alt="фотография " width="1280" height="853"></div>
+
+
+
+    </div>
 
     <section class="swamp">
         <div class="container">
@@ -279,6 +310,14 @@
                 </div>
     </section>
 
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="./script_slick.js"></script>
 
 
 </body>

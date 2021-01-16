@@ -1,9 +1,10 @@
 *{
     font-size: 16px;
+    color: #0b3361;
 }
 h2{
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 35px;
 }
 h3{
     font-size: 27px;
@@ -27,12 +28,15 @@ padding: 15px 25px;
 
 .swamp__img img{
     max-width: 40vw;
-    padding: 0  15px 15px;
+    height: auto;
+    margin: 0  15px 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.swamp__img order{
-order: inherit;
+.slick__slider img{
+    max-width: 30vw;
 }
+
 
 .nature__links {
     color: #30b91d;
@@ -49,12 +53,16 @@ order: inherit;
 @media (max-width: 1100px) {
     .swamp__img img{
         max-width: 80vw; 
-        padding: 0  15px 15px;
-        margin: 0 auto;
+        /* padding: 0  15px 15px; */
+        margin: 30px auto;
     } 
     .swamp__cards{
         display: block;
         
+    }
+
+    .slick__slider img{
+        max-width: 45vw;
     }
     
 }
@@ -63,13 +71,16 @@ order: inherit;
 @media (max-width: 767px) {
     .swamp__img img{
         max-width: 90vw;
-        padding: 10px 0;
-        margin: 0 auto; 
+        /* padding: 10px 0; */
+        margin: 20px auto; 
         
 
     }
     swamp__text-title {
         padding: 15px 0px;
+    }
+    .slick__slider img{
+        max-width: 90vw;
     }
     
 }
