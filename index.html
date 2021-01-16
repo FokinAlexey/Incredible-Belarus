@@ -21,15 +21,22 @@
             <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
           </a>
         </div>
-        <ul class="navigation__links">
-          <li><a class="navigation__link" href="index.html">Главная</a></li>
-          <li><a class="navigation__link" href="nature.html">Природа</a></li>
-          <li><a class="navigation__link" href="castles.html"> Замки</a></li>
-          <li><a class="navigation__link" href="#">ВОВ</a></li>
-        </ul>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="navigation__links menu__box">
+            <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
+            <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
+            <li><a class="navigation__link menu__item" href="#"> Замки</a></li>
+            <li><a class="navigation__link menu__item" href="#">ВОВ</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
+
   <main>
     <section class="teasers">
       <h2 class="visually-hidden">Фотогалерея</h2>
