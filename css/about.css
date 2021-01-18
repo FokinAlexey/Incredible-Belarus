@@ -32,4 +32,8 @@
     font-size: 18px;
     line-height: 25px;
   }
+  
+  .about__text-block {
+    width: 100%;
+  }
 }
