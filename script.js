@@ -80,6 +80,25 @@ const initSliderTeasers = () => {
   });
 };
 
+// анимация
+const scrollItems = document.querySelectorAll('.scrooll-item');
+
+const scrollAnimation = () => {
+  let windowScroolCoordinates = (window.innerHeight - 100) + window.scrollY;
+  scrollItems.forEach((elem) => {
+    let scrollOffset = elem.offsetTop + elem.offsetHeight / 2;
+    if(windowScroolCoordinates >= scrollOffset) {
+      elem.classList.add('scrooll-item--animation');
+    } else {
+      elem.classList.remove('scrooll-item--animation');
+    }
+  });
+};
+
+if(scrollItems) {
+  window.addEventListener('scroll', scrollAnimation);
+}
+
 initSliderTeasers();
 
 if(subscribeForm) {
