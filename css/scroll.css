@@ -4,14 +4,6 @@
   transform: translateX(-50%);
 }
 
-/* .scrooll-item--left {
-  transform: translateX(50%);
-}
-
-.scrooll-item--right {
-  transform: translateX(-50%);
-} */
-
 .scrooll-item--animation {
   opacity: 1;
   transform: translateX(0);
