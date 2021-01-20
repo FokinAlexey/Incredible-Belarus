@@ -1,15 +1,16 @@
 .scrooll-item {
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateX(-50%);
 }
 
-.scrooll-item--left {
+/* .scrooll-item--left {
   transform: translateX(50%);
 }
 
 .scrooll-item--right {
   transform: translateX(-50%);
-}
+} */
 
 .scrooll-item--animation {
   opacity: 1;
