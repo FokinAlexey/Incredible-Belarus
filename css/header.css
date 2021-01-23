@@ -66,6 +66,7 @@
 /* hamburger menu */
 
 @media (max-width: 600px) {
+
     #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
     }
