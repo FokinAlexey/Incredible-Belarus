@@ -80,6 +80,25 @@ const initSliderTeasers = () => {
   });
 };
 
+// анимация
+const scrollItems = document.querySelectorAll('.scrooll-item');
+
+const scrollAnimation = () => {
+  let windowScroolCoordinates = (window.innerHeight - 100) + window.scrollY;
+  scrollItems.forEach((elem) => {
+    let scrollOffset = elem.offsetTop + elem.offsetHeight / 2;
+    if (windowScroolCoordinates >= scrollOffset) {
+      elem.classList.add('scrooll-item--animation');
+    } else {
+      elem.classList.remove('scrooll-item--animation');
+    }
+  });
+};
+
+if (scrollItems) {
+  window.addEventListener('scroll', scrollAnimation);
+}
+
 initSliderTeasers();
 
 if (subscribeForm) {
@@ -289,4 +308,16 @@ const submitSubscribeForm2 = (evt) => {
 
 if (subscribeForm2) {
   subscribeForm2.addEventListener('submit', submitSubscribeForm2);
+}
+// block scroll
+const checkBox = document.getElementById('menu__toggle');
+const fun1 = () => {
+
+  if (checkBox.checked) {
+    // add style in body
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    // remove style from body
+    document.querySelector("body").style.overflow = "auto";
+  }
 }

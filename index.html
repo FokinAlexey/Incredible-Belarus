@@ -22,7 +22,7 @@
           </a>
         </div>
         <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+          <input id="menu__toggle" type="checkbox" onclick="fun1()" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -38,29 +38,43 @@
   </header>
 
   <main>
+    <div class="intro container">
+      <div class="intro__text-block">
+        <h2 class="intro__title">Достопримечательности Беларуси</h2>
+        <p class="intro__text">
+          Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Здесь нет изобилия архитектурных
+          памятников старины, они разрушены безжалостным военным временем. Но&nbsp;те, что сохранились, являются
+          жемчужинами нашей страны.
+        </p>
+        <p class="intro__text">
+          Беларусь&nbsp;&mdash; край лесов, озер, зубров и&nbsp;аистов. Она останется в&nbsp;сердце чистыми
+          городами, уютными деревнями, неповторимой заповедной природой, старинными местами, театрами и&nbsp;музеями.
+        </p>
+      </div>
+    </div>
     <section class="teasers">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class=" teasers__slider swiper-container">
         <ul class="teasers__list swiper-wrapper">
           <li class="teasers__item swiper-slide">
             <b class="teasers__item-text">Куды б нi паехаý, цябе сустракаюць непаýторныя краявiды.</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="750" alt="Фото">
+            <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
             <b class="teasers__item-text">Беларусь - гэта край легенд, казак і паданняў.</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="750" alt="Фото">
+            <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
             <b class="teasers__item-text">Дзесяццю тысячамі блакiтных вачэй пазiрае мая радзiма на Млечны Шлях.</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="750" alt="Фото">
+            <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
             <b class="teasers__item-text">Беларусь, мая сонца-краіна!</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="750" alt="Фото">
+            <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
             <b class="teasers__item-text">Паклон табе, мой беларускі край!</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="750" alt="Фото">
+            <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="555" alt="Фото">
           </li>
         </ul>
         <div class="teasers__now now">
@@ -76,24 +90,13 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="facts-block">
       <div class="about__content container">
         <h2 class="visually-hidden">О Беларуси</h2>
-        <div class="about__text-block">
-          <p class="about__text">
-            Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Здесь нет изобилия архитектурных
-            памятников старины, они разрушены безжалостным военным временем. Но&nbsp;те, что сохранились, являются
-            жемчужинами нашей страны.
-          </p>
-          <p class="about__text">
-            Беларусь&nbsp;&mdash; край лесов, озер, зубров и&nbsp;аистов. Она останется в&nbsp;сердце чистыми
-            городами, уютными деревнями, неповторимой заповедной природой, старинными местами, театрами и&nbsp;музеями.
-          </p>
-        </div>
-        <div class="about__facts facts">
+        <div class="facts">
           <h3 class="facts__title">Интересные факты о Беларуси</h3>
           <ul class="facts__list">
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 Территория Беларуси&nbsp;&mdash; 207 тысяч&nbsp;кв.&nbsp;км. Это 84&nbsp;страна по&nbsp;размеру
@@ -102,7 +105,7 @@
                 Бельгия, Голландия, Швейцария и&nbsp;Венгрия.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 Беларусь самая равнинная страна Европы, здесь самые минимальные перепады высот и&nbsp;полностью
@@ -110,7 +113,7 @@
                 европейских стран как Черногория или Словения.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 Через территорию Беларуси протекают 20800&nbsp;рек. Рек, длина которых более 500&nbsp;км., всего девять:
@@ -119,42 +122,46 @@
                 транзитными.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 На&nbsp;относительно компактной территории Беларуси расположено довольно много дворцов и&nbsp;замков,
                 два из&nbsp;которых заслуженно пополняют список Всемирного наследия Юнеско: <a
-                  href="#nowhear">Несвижский дворец</a>, а&nbsp;также <a href="#nowhear">Мирский замок</a>&nbsp;&mdash;
+                  href="https://niasvizh.by" target="_blank" rel="nofollow noopener">Несвижский дворец</a>, а&nbsp;также
+                <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">Мирский замок</a>&nbsp;&mdash;
                 мощное оборонительное сооружение, отлично сохранившееся до&nbsp;наших времен.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 В&nbsp;Беларуси находится самый восточный готический объект на&nbsp;территории Европы. Это <a
-                  href="#nowhear">Мирский замок</a>, который был построен более 500 лет назад с&nbsp;соблюдением всех
+                  href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">Мирский замок</a>, который был
+                построен более 500 лет назад с&nbsp;соблюдением всех
                 архитектурных готических канонов.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
-                В&nbsp;<a href="#nowhear">Спасо-Преображенской церкви</a> Полоцкого Свято-Ефросиниевского монастыря
+                В&nbsp;<a href="http://spas-monastery.by/" target="_blank" rel="nofollow noopener">Спасо-Преображенской
+                  церкви Полоцкого Свято-Ефросиниевского монастыря</a>
                 сохранились уникальные росписи 12&nbsp;века, аналогов которым нет в&nbsp;Восточной Европе.
                 Их&nbsp;обнаружили совсем недавно под несколькими слоями фресок более позднего времени.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 Беларусь занимает первое место по&nbsp;количеству вольноживущих зубров, которые были еще меньше 100 лет
                 под угрозой вымирания. В&nbsp;конце 2019 года поголовье белорусских зубров составило почти
                 1900&nbsp;голов. Они обитают в&nbsp;9&nbsp;различных лесных массивах республики. Самое большое стадо
-                проживает в&nbsp;<a href="#nowhear">Беловежской Пуще</a> и&nbsp;в&nbsp;<a href="#nowhear">Припятском
+                проживает в&nbsp;<a href="https://npbp.by/" target="_blank" rel="nofollow noopener">Беловежской Пуще</a>
+                и&nbsp;в&nbsp;<a href="https://www.npp.by/" target="_blank" rel="nofollow noopener">Припятском
                   национальном парке</a>.
               </p>
             </li>
-            <li class="facts__item">
+            <li class="facts__item scrooll-item">
               <i class="fa fa-pagelines" aria-hidden="true"></i>
               <p class="facts__text">
                 Интересен факт, что самая длинная улица в&nbsp;Беларуси&nbsp;&mdash; Проспект Независимости

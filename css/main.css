@@ -5,7 +5,7 @@
 @import './footer.css';
 @import './now.css';
 @import './nature.css';
-@import './about.css';
+@import './intro.css';
 @import './facts.css';
 @import './preview.css';
 @import './subscribe.css';
@@ -16,3 +16,4 @@
 @import './quotes-of-great-man.css';
 @import './nesvizh.css';
 @import './mir.css';
+@import './scroll.css';
