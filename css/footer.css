@@ -40,7 +40,7 @@
 .contact_form {
     display: flex;
     flex-direction: column;    
-    padding: 25px;   
+    padding: 20px;   
     margin-bottom: 15px;    
     border: 1.5px solid #fff;           
 }
@@ -88,11 +88,13 @@
 .label {
     font-size: 15px;
     color: #14084d; 
+    padding-left: 10px;
 }
 
 .contacts {
     padding: 20px;       
     border: 1.5px solid #fff; 
+    margin-bottom: 15px; 
 }
 
 .footerH3 {
