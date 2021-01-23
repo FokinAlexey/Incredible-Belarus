@@ -240,3 +240,53 @@ const multiItemSlider = (function () {
 const slider = multiItemSlider('.slider', {
   isCycling: true
 })
+
+//pop-up в форме 
+
+const successMessage2 = document.querySelector('.success__form');
+const successCloseButton2 = document.querySelector('.success__closer__form');
+const subscribeForm2 = document.querySelector('.contact_form');
+
+const closeByEsc2 = () => {
+  document.addEventListener('keydown', (evt) => {
+    if (evt.keyCode === ESC_KEYCODE) {
+      successMessageCloserHandler2();
+    }
+  });
+};
+
+const CloseOnClickOutsideHandler2 = (e) => {
+  let target = e.target;
+
+  if (target.classList.contains('success__overlay__form')) {
+    successMessageCloserHandler2();
+  }
+};
+
+const successMessageCloserHandler2 = () => {
+  successMessage2.classList.remove('success__form--show');
+};
+
+const successMessageOpenHandler2 = () => {
+  if (successMessage2) {
+    successMessage2.classList.add('success__form--show');
+  }
+
+  successCloseButton2.addEventListener('click', successMessageCloserHandler2);
+  closeByEsc2();
+  document.addEventListener('click', CloseOnClickOutsideHandler2);
+};
+
+const resetForm2 = () => {
+  subscribeForm2.reset();
+};
+
+const submitSubscribeForm2 = (evt) => {
+  evt.preventDefault();
+  successMessageOpenHandler2();
+  resetForm2();
+};
+
+if (subscribeForm2) {
+  subscribeForm2.addEventListener('submit', submitSubscribeForm2);
+}
