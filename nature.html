@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -8,22 +8,38 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
 </head>
 
 <body>
     <header class="header">
-        <h1 class="visually-hidden">Incredible Belarus</h1>
-        <div class="inner">
+        <h1 class="visually-hidden">Невероятная Беларусь</h1>
+        <div class="inner container">
             <nav class="navigation">
                 <div class="navigation__logo">
-                    <a href="index.html"> <img src="./assets/img/header/logo.svg" alt="logo" width="200"></a>
+                    <a href="index.html">
+                        <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+                    </a>
                 </div>
-                <ul class="navigation__links">
-                    <li><a class="navigation__link" href="index.html">Главная</a></li>
-                    <li><a class="navigation__link" href="nature.html">Природа</a></li>
-                    <li><a class="navigation__link" href="#"> Замки</a></li>
-                    <li><a class="navigation__link" href="#">ВОВ</a></li>
-                </ul>
+
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" onclick="fun1()" />
+                    <label class=" menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="navigation__links menu__box">
+                        <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
+                        <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
+                        <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
+                        <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
+                    </ul>
+                </div>
+
             </nav>
         </div>
     </header>
@@ -31,6 +47,12 @@
 
 
     <section class="swamp">
+
+        <div class="castles-block__teaser">
+            <img src="./assets/img/nature/nature_main_1920.jpg" alt="Фото" width="1920" height="950">
+            <h2 class="castles-block__title">Природа Беларуси</h2>
+        </div>
+
         <div class="container">
             <div class="swamp__inner">
                 <h2 class="swamp__title"> Белорусские болота - легкие страны</h2>
@@ -38,34 +60,43 @@
                     Беларуси. </p>
                 <div class="swamp__cards">
                     <div class="swamp__text-title">
-                        <h3>Болото Ельня</h3>
+                        <h3 class="swamp__h3">Болото Ельня</h3>
                         <p class="swamp__text-text">
-                            <b>Ельня </b>- это самое большое верховое болото в Беларуси и пятое по величине в Европе -
+                            <b>ЕЛЬНЯ </b>- это самое большое верховое болото в&nbsp;Беларуси и&nbsp;пятое
+                            по&nbsp;величине в&nbsp;Европе -
                             занимает
-                            площадь в 18794 га. Один из
-                            крупнейших в Беларуси комплексов верховых болот с многочисленными озёрами. По всему
-                            болоту разбросаны небольшие острова, покрытые мелколиственными и еловыми лесами. Большая
+                            площадь в&nbsp;18794&nbsp;га. Один из
+                            крупнейших в&nbsp;Беларуси комплексов верховых болот с&nbsp;многочисленными озёрами.
+                            По&nbsp;всему
+                            болоту разбросаны небольшие острова, покрытые мелколиственными и&nbsp;еловыми лесами.
+                            Большая
                             часть
-                            болотного массива заросла невысокой сосной, но встречаются и довольно значительные открытые
-                            участки с многочисленными мелкими озёрами и окнами воды. Центральная его часть возвышается
+                            болотного массива заросла невысокой сосной, но&nbsp;встречаются и&nbsp;довольно значительные
+                            открытые
+                            участки с&nbsp;многочисленными мелкими озёрами и&nbsp;окнами воды. Центральная его часть
+                            возвышается
                             над
-                            периферийными участками на 7 метров. Из болотного массива вытекают три реки. На территории
-                            болота насчитывается более 100 озёр (в том числе Ельня, Белое, Бережа, Яжгиня, Долгое,
+                            периферийными участками на&nbsp;7&nbsp;метров. Из&nbsp;болотного массива вытекают три реки.
+                            На&nbsp;территории
+                            болота насчитывается более 100 озёр (в&nbsp;том числе Ельня, Белое, Бережа, Яжгиня, Долгое,
                             Плоское,
-                            Ближнее, Окнистое, Жучино, Тоболки). Большинство из них соединено между собой реками и
+                            Ближнее, Окнистое, Жучино, Тоболки). Большинство из&nbsp;них соединено между собой реками и
                             протоками. Болото также интересно для наблюдения эффекта вторичного заболачивания.
                         </p>
-                        <p>
-                            На болоте есть оборудованные экотропы и смотровые вышки. ГПУ «Заказник Ельня» предлагает
-                            наблюдение за токующими тетеревами, за журавлями с вышки и днем на полях, посещение
-                            экологического визит-центра, экскурсии на болотоступах, на болотоходе, по пешим маршрутам,
+                        <p class="swamp__text-text">
+                            На&nbsp;болоте есть оборудованные экотропы и&nbsp;смотровые вышки. ГПУ &laquo;Заказник
+                            Ельня&raquo; предлагает
+                            наблюдение за&nbsp;токующими тетеревами, за&nbsp;журавлями с&nbsp;вышки и&nbsp;днем
+                            на&nbsp;полях, посещение
+                            экологического визит-центра, экскурсии на&nbsp;болотоступах, на&nbsp;болотоходе,
+                            по&nbsp;пешим маршрутам,
                             прокат туристического снаряжения.
                         </p>
                         <p>
                             Витебская обл., Миорский, Шарковщинский р-н.
-                            <a
+                            <a class="nature__links" target="_blank"
                                 href="https://www.mlh.by/our-additional-activities/forestry-association/disnenskiy-leskhoz/">
-                                <b>«Дисненский лесхоз»</b></a>
+                                <b>ГЛХУ «Дисненский лесхоз»</b></a>
                         </p>
                     </div>
                     <div class="swamp__img">
@@ -78,31 +109,45 @@
             <div class="swamp__inner">
                 <!-- <h2 class="swamp__title"></h2> -->
                 <!-- <p> </p> -->
-                <div class="swamp__cards">
-                    <div class="swamp__img order">
-                        <img src="./assets/img/nature/swamp-bird.jpg" alt="">
+                <div class="swamp__cards block23 ">
+                    <div class="swamp__img ">
+
+                        <div><img src="./assets/img/nature/swamp-bird.jpg" alt="фотография "></div>
+
+
                     </div>
                     <div class="swamp__text-title">
-                        <h3>Ольманские болота</h3>
+                        <h3 class="swamp__h3">Ольманские болота</h3>
                         <p class="swamp__text-text">
-                            Крупнейший в Европе комплекс верховых, переходных и низинных болот. На его территории был
-                            расположен военный авиационный полигон «Мерлинские хутора». Около 40% территории занимают
-                            открытые болота, преимущественно переходные. Среди болот разбросаны песчаные дюны (в виде
-                            островов и длительных гряд), поросшие сосновыми или лиственными лесами. Ольманские болота
-                            расположены в междуречье правых притоков Припяти рек Ствига и Льва. В северной части
-                            комплекса находятся два озера – Большое и Малое Засоминное с общей площадью около 100
-                            гектаров. Остальные 23 озера мелкие – от 0,5 до 5 га. Ольманские болота отличаются крупными
-                            размерами, сохранностью в естественном состоянии и стабильностью гидрологических условий.
+                            Крупнейший в&nbsp;Европе комплекс верховых, переходных и&nbsp;низинных болот. На&nbsp;его
+                            территории был
+                            расположен военный авиационный полигон &laquo;Мерлинские хутора&raquo;. Около&nbsp;40%
+                            территории занимают
+                            открытые болота, преимущественно переходные. Среди болот разбросаны песчаные дюны
+                            (в&nbsp;виде
+                            островов и&nbsp;длительных гряд), поросшие сосновыми или лиственными лесами. Ольманские
+                            болота
+                            расположены в&nbsp;междуречье правых притоков Припяти рек Ствига и&nbsp;Льва.
+                            В&nbsp;северной части
+                            комплекса находятся два озера&nbsp;&mdash; Большое и&nbsp;Малое Засоминное с&nbsp;общей
+                            площадью около 100
+                            гектаров. Остальные 23&nbsp;озера мелкие&nbsp;&mdash; от&nbsp;0,5 до&nbsp;5&nbsp;га.
+                            Ольманские болота отличаются крупными
+                            размерами, сохранностью в&nbsp;естественном состоянии и&nbsp;стабильностью гидрологических
+                            условий.
                         </p>
-                        <p>
-                            На болоте есть оборудованная экотропа и смотровые вышки. ГПУ «Заказники республиканского
-                            значения “Средняя Припять” и “Ольманские болота”» предлагает комплекс туристических услуг
-                            (проживание, прокат катера-понтона и туристического инвентаря, сопровождение экскурсионных
+                        <p class="swamp__text-text">
+                            На&nbsp;болоте есть оборудованная экотропа и&nbsp;смотровые вышки. ГПУ &laquo;Заказники
+                            республиканского
+                            значения &bdquo;Средняя Припять&ldquo; и&nbsp;&bdquo;Ольманские болота&ldquo;&raquo;
+                            предлагает комплекс туристических услуг
+                            (проживание, прокат катера-понтона и&nbsp;туристического инвентаря, сопровождение
+                            экскурсионных
                             групп).
                         </p>
                         <p>
                             Брестская обл., Столинский р-н
-                            <a href="https://lpol.lesnoi.by/?page_id=38">
+                            <a class="nature__links" target="_blank" href="https://lpol.lesnoi.by/?page_id=38">
                                 <b>ГЛХУ «Полесский лесхоз»</b></a>
                         </p>
                     </div>
@@ -116,27 +161,36 @@
                 <!-- <p> </p> -->
                 <div class="swamp__cards">
                     <div class="swamp__text-title">
-                        <h3>ПРИПЯТСКИЕ БОЛОТА</h3>
+                        <h3 class="swamp__h3">Припятские болота</h3>
                         <p class="swamp__text-text">
-                            Этот крупнейший в Европе массив переходных и верховых болот, расположенных в обширной пойме
-                            реки Припять, составляет ландшафтную основу Национального парка «Припятский». Весной эти
+                            Этот крупнейший в&nbsp;Европе массив переходных и&nbsp;верховых болот, расположенных
+                            в&nbsp;обширной пойме
+                            реки Припять, составляет ландшафтную основу Национального парка &laquo;Припятский&raquo;.
+                            Весной эти
                             огромные пространства покрываются паводковыми водами. Переходные болота покрыты насаждениями
-                            березы пушистой, верховые – низкорослой сосной, встречаются открытые пространства. В
-                            переходной полосе от болот к суходолам и вдоль водотоков произрастают островные ельники,
-                            иногда болота перемежаются песчаными холмами и дюнами «полесского» типа с сосновыми борами.
+                            березы пушистой, верховые&nbsp;&mdash; низкорослой сосной, встречаются открытые
+                            пространства. В
+                            переходной полосе от&nbsp;болот к&nbsp;суходолам и&nbsp;вдоль водотоков произрастают
+                            островные ельники,
+                            иногда болота перемежаются песчаными холмами и&nbsp;дюнами &laquo;полесского&raquo; типа
+                            с&nbsp;сосновыми борами.
 
 
-                        <p>
-                            Имеющиеся маршруты: экологический пешеходный маршрут «Ландшафтный», экологический
-                            водно-пешеходный маршрут «Устье Ствиги», экологический автомобильный маршрут «Северный»,
-                            экологический автомобильно-пешеходный маршрут «Южный», экологический автомобильно-пешеходный
-                            (автомобильный, пешеходный, велосипедный) маршрут «Пойменный», экологический водный маршрут
-                            по реке Припять на прогулочном теплоходе и др. </p>
+                        <p class="swamp__text-text">
+                            Имеющиеся маршруты: экологический пешеходный маршрут &laquo;Ландшафтный&raquo;,
+                            экологический
+                            водно-пешеходный маршрут &laquo;Устье Ствиги&raquo;, экологический автомобильный маршрут
+                            &laquo;Северный&raquo;,
+                            экологический автомобильно-пешеходный маршрут &laquo;Южный&raquo;, экологический
+                            автомобильно-пешеходный
+                            (автомобильный, пешеходный, велосипедный) маршрут &laquo;Пойменный&raquo;, экологический
+                            водный маршрут
+                            по&nbsp;реке Припять на&nbsp;прогулочном теплоходе и&nbsp;др. </p>
 
                         </p>
-                        <p>
+                        <p class="swamp__text-text">
                             Гомельская обл., Лельчицкий р-н
-                            <a href="https://lyaskovichi.all.biz/contacts">
+                            <a class="nature__links" target="_blank" href="https://lyaskovichi.all.biz/services">
                                 <b>ЭЛОХ «Лясковичи»</b></a>
                         </p>
                     </div>
@@ -146,16 +200,227 @@
 
                 </div>
     </section>
+    <div class="swamp__img slick__slider">
 
-    <section>
+        <div><img src="./assets/img/nature/swamp-bird.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-1.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-2.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-3.jpg" alt="фотография " width="1280" height="853"></div>
+        <!-- <div><img src="./assets/img/nature/swamp_1280-4.jpg" alt="фотография " width="1280" height="853"></div> -->
+        <div><img src="./assets/img/nature/swamp_1280-5.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-6.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-7.jpg" alt="фотография " width="1280" height="853"></div>
+        <div><img src="./assets/img/nature/swamp_1280-8.jpg" alt="фотография " width="1280" height="853"></div>
 
+
+
+    </div>
+
+    <section class="swamp">
+        <div class="container">
+            <div class="swamp__inner">
+                <h2 class="swamp__title"> МЕЛОВЫЕ КАРЬЕРЫ</h2>
+                <p>Меловые карьеры, белорусские &laquo;мальдивы&raquo;... крайне опасные и&nbsp;притягивающие
+                    к&nbsp;себе объекты техногенного
+                    происхождения. Исторически наиболее
+                    юные приробные объекты, которые образовались при затоплении карьеров после выработки меловых
+                    отложений.Берега на&nbsp;&laquo;Мальдивах&raquo; крутые,
+                    иногда вертикальные, крайне скользкие и&nbsp;мягкие из-за глины.</p>
+                <div class="swamp__cards">
+                    <div class="swamp__text-title">
+                        <h3 class="swamp__h3">Красносельскте меловые карьеры</h3>
+                        <p class="swamp__text-text">
+                            Самые крупные меловые карьеры в&nbsp;Беларуси. С&nbsp;десяток лет назад кто-то сравнил
+                            их&nbsp;с&nbsp;островным
+                            архипелагом в&nbsp;Индийском океане.
+                            Едва&nbsp;ли за&nbsp;схожесть ландшафтов, скорее за&nbsp;пронзительно бирюзовую воду. Только
+                            берега у&nbsp;них
+                            не&nbsp;песчаные, а
+                            меловые с&nbsp;глиной. Территория этих карьеров раскинулась на&nbsp;несколько километров
+                            в&nbsp;длину.
+                            Глубина там
+                            действительно пугает&nbsp;&mdash; в&nbsp;некоторых местах она достигает 30&nbsp;метров.
+
+                        </p>
+                        <p class="swamp__text-text">
+                            Совсем рядом с Волковыском расположился город Мосты, где можно погулять <a
+                                class="nature__links" target="_blank"
+                                href="https://www.google.com/search?q=%D1%81%D0%B0%D0%BC%D1%8B%D0%B9+%D0%B4%D0%BB%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%81%D0%BD%D0%BE%D0%B9+%D0%BC%D0%BE%D1%81%D1%82+%D0%B2+%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8&sxsrf=ALeKk00Ma7_oZ0DZ6KPKcWbS06D0keu3UQ:1610282550471&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiliqL7sZHuAhU0CRAIHapfBR8Q_AUoAXoECAUQAw&biw=1853&bih=949">
+                                о самому длинному
+                                подвесному мосту в Беларуси</a>. Загляни, если будет время и желание.
+                        </p>
+                        <p>
+                            <a class="nature__links" target="_blank"
+                                href="https://www.google.com/maps/dir//53.2877129,24.4890355/@53.2805174,24.4806857,14.75z/data=!4m2!4m1!3e0?hl=en">
+                                Маршрут: красносельские карьеры</a>
+                        </p>
+                    </div>
+                    <div class="swamp__img">
+                        <img src="./assets/img/nature/limePit_volkovisk.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swamp__inner">
+                <!-- <h2 class="swamp__title"></h2> -->
+                <!-- <p> </p> -->
+                <div class="swamp__cards block23">
+                    <div class="swamp__img order">
+                        <img src="./assets/img/nature/limePit_luban.jpg" alt="">
+                    </div>
+                    <div class="swamp__text-title">
+                        <h3 class="swamp__h3">Любанские меловые карьеры</h3>
+                        <p class="swamp__text-text">
+                            Самые близкие к&nbsp;столице меловые карьеры находятся в&nbsp;140&nbsp;км
+                            от&nbsp;Минска&nbsp;&mdash; к&nbsp;ним и&nbsp;добираться
+                            проще всего. Когда-то здесь добывали мел, а&nbsp;позже карьеры заполнились водой. Вокруг
+                            высажен
+                            лес, и&nbsp;выглядит это очень классно: особенно интересно бирюзовая вода смотрится
+                            на&nbsp;фоне сосен
+                            и&nbsp;берез. Лучшая локация для фотографий здесь&nbsp;&mdash; деревянный трамплин
+                            на&nbsp;втором карьере (он
+                            поменьше), который расположен чуть дальше от&nbsp;дороги. Там, кстати, есть столики
+                            и&nbsp;лавочки для
+                            пикника (не&nbsp;забудь потом забрать весь мусор с&nbsp;собой). Купаться в&nbsp;этом
+                            живописном месте не
+                            стоит, поскольку слишком резко наступает глубина, кроме того, могут произойти обвалы
+                            берегов. Ходили слухи, что несколько предпринимателей собирались оборудовать здесь место для
+                            отдыха, но&nbsp;вложения для этого потребовались&nbsp;бы слишком большие.
+                        </p>
+                        <p class="swamp__text-text">
+                            Если захочешь еще чем-нибудь разнообразить поездку, то по дороге к этим меловым карьерам
+                            можно заехать на <a class="nature__links" target="_blank"
+                                href="https://www.google.com/search?sxsrf=ALeKk00CSSSzAx2QNDCjCNZRIaxNzRD22w:1610280442003&source=univ&tbm=isch&q=%D1%81%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5+%D1%82%D0%B5%D1%80%D1%80%D0%B8%D0%BA%D0%BE%D0%BD%D1%8B&sa=X&ved=2ahUKEwjKvO-NqpHuAhXKxIsKHcoYBa0QjJkEegQIBBAB&biw=1853&bih=888">Солигорские
+                                терриконы</a>, они находятся в 30 км. А через Солигорск
+                            и в Минск удобно будет вернуться. </p>
+                        <p>
+                            <a class="nature__links" target="_blank"
+                                href="https://www.google.com/maps/dir/53.8813444,27.5147034/52.8718263,27.8648518/@53.3523279,27.1125289,9z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m0!3e0?hl=en">
+                                Mаршрут: Деревня Хотиново, Любанский район, Минская область</a>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="swamp__inner">
+                <!-- <h2 class="swamp__title"> </h2> -->
+                <!-- <p> </p> -->
+                <div class="swamp__cards">
+                    <div class="swamp__text-title">
+                        <h3 class="swamp__h3">У деревни Кабаки</h3>
+                        <p class="swamp__text-text">
+                            Под Березой находятся три затопленных карьера. Добыча
+                            мела в&nbsp;этих местах началась еще в&nbsp;30-е годы прошлого века под руководством купцов
+                            Сольницы и
+                            Шапиро. Причем разработка месторождения велась ручным способом&nbsp;&mdash; при помощи
+                            кирки, лопаты и
+                            колотушки. Мел из&nbsp;здешних карьеров продавали не&nbsp;только по&nbsp;всей Польше,
+                            но&nbsp;и&nbsp;поставляли за
+                            границу.
+
+                            Уже в&nbsp;послевоенное время в&nbsp;Березе был построен известковый завод и&nbsp;добыча
+                            мела приобрела
+                            промышленные масштабы. Те&nbsp;карьеры, что мы&nbsp;видим сегодня,&nbsp;&mdash; результат
+                            деятельности завода.
+
+                        <p class="swamp__text-text">
+                            Карьеров вблизи Березы несколько. Самый живописный из&nbsp;них, который еще сохранил
+                            заветный
+                            бирюзовый цвет воды, находится у&nbsp;деревни Кабаки. Патрули милиции здесь также дежурят в
+                            сезон, следя за&nbsp;тем, чтобы никто не&nbsp;купался. Однако запрета на&nbsp;посещение нет.
+                            Плюс находится
+                            карьер недалеко от&nbsp;дороги, так что отрезать все подъезды к&nbsp;нему
+                            не&nbsp;представляется возможным.
+                        </p>
+                        <p class="swamp__text-text">
+                            Один из самых "безопасных" карьеров -уровень опасности купания в нем оценивается как
+                            <b>средний</b>.
+                        </p>
+
+                        </p>
+                        <p>
+
+                            <a class="nature__links" target="_blank"
+                                href="https://www.google.com/maps/dir//Biaroza+District/@52.4992932,24.7220059,14.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4720c776c5adff09:0x2d8ecbb707743e0b!2m2!1d24.7399355!2d52.4953069!3e0?hl=en">
+                                Маршрут к меловым карьерам у д.Кабаки</a>
+                        </p>
+                    </div>
+                    <div class="swamp__img">
+                        <img src="./assets/img/nature/limePit_kabaki.jpg" alt="">
+                    </div>
+
+                </div>
     </section>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__navigation">
+                <div class="navigation__logo">
+                    <a href="index.html">
+                        <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+                    </a>
+                </div>
+                <ul class="footer__navigation__links">
+                    <li><a class="footer__navigation__link" href="index.html">Главная</a></li>
+                    <li><a class="footer__navigation__link" href="nature.html">Природа</a></li>
+                    <li><a class="footer__navigation__link" href="castles.html"> Замки</a></li>
+                    <li><a class="footer__navigation__link" href="gpw.html">ВОВ</a></li>
+                </ul>
+            </nav>
+            <form class="contact__form">
+                <h3 class="footerH3">Связаться с администрацией:</h3>
+                <label class="label" for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                <label class="label" for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                <label class="label" for="message">Введите сообщение:</label>
+                <textarea name="message" id="message" cols="30" rows="8" required></textarea>
+                <button type="submit" id="btn" name="btn">Отправить</button>
+            </form>
+            <section class="contacts">
+                <h3 class="footerH3">Наши контакты:</h3>
+                <ul class="ourContacts">
+                    <li class="ourPhone">Наш телефон:&nbsp; <a href="tel:+37529*******"> +375 (29) *******</a></li>
+                    <li class="ourEmail">Наша почта:&nbsp; <a href="mailto:ouremail@gmail.com"> ouremail@gmail.com</a>
+                    </li>
+                    <li class="ourAddress">Наш адрес:&nbsp;<address>г. Минск Дворец Независимости </address>
+                    </li>
+                </ul>
+                <h3 class="footerH3">Социальные сети:</h3>
+                <ul class="socialMedia">
+                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+                                class="mediaIMG"></a></li>
+                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+                                class="mediaIMG"></a></li>
+                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+                                class="mediaIMG"></a></li>
+                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+                                class="mediaIMG"></a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="copyright"> © 2020—2021 Incredible Belarus</div>
+    </footer>
+    <div class="success__form">
+        <div class="success__overlay__form">
+            <div class="success__message__form">
+                <p>Мы свяжемся с вами в ближайшее время!</p>
+                <button class="success__closer__form" type="button" aria-label="Закрыть окно"></button>
+            </div>
+        </div>
+    </div>
 
 
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-
+    <script type="text/javascript" src="./script_slick.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

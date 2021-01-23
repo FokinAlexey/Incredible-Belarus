@@ -1,0 +1,57 @@
+.intro {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.intro__title {
+  width: 100%;
+  margin: 0 0 25px 0;
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro__text {
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-family: 'Xanh Mono', monospace;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  color: #0f0426;
+  font-style: italic;
+}
+
+.intro__text-block {
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .intro__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .intro__text {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro__title {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .intro__text-block {
+    width: 100%;
+  }
+}

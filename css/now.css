@@ -62,16 +62,16 @@
 }
 
 .now__control i {
-  color: #0a223d;
+  color:#fff;
 }
 
 .now__control--prev {
-  background-color: #669cd6;
+  background-color: #7db6f7;
 }
 
 .now__control--next {
   margin-left: 8px;
-  background-color: #669cd6;
+  background-color: #7db6f7;
 }
 
 .now__control:hover {
@@ -79,5 +79,31 @@
 }
 
 .now__control:hover i {
-  color: #ffffff;
+  color: #fff;
+}
+
+@media(max-width: 767px) {
+  .now {
+    position: static;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #accbee;
+  }
+
+  .now__pags::before {
+    height: 20px;
+  }
+
+  .now__control {
+    width: 40px;
+    height: 40px;
+  }
+
+  .now__control--prev,
+  .now__control--next {
+    color: #2f7dd4;
+  }
 }
