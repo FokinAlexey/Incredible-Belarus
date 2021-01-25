@@ -37,7 +37,7 @@
     transition: all .7s;  
 }
 
-.contact_form {
+.contact__form {
     display: flex;
     flex-direction: column;    
     padding: 20px;   
@@ -155,7 +155,7 @@
     .contacts {
         width: 100%;
     }
-    .contact_form {
+    .contact__form {
         width: 60%;
     }
 }   
@@ -168,7 +168,7 @@
         width: 100%;
     }  
 
-    .contact_form {
+    .contact__form {
         width: 100%;
         padding: 10px;
         box-sizing: border-box;

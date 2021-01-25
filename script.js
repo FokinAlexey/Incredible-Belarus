@@ -270,15 +270,19 @@ const multiItemSlider = (function () {
   }
 }());
 
-const slider = multiItemSlider('.slider', {
-  isCycling: true
-})
+const sliderBlockQuotes = document.querySelector('.slider');
+
+if (sliderBlockQuotes) {
+  const slider = multiItemSlider('.slider', {
+    isCycling: true
+  })
+}
 
 //pop-up в форме 
 
 const successMessage2 = document.querySelector('.success__form');
 const successCloseButton2 = document.querySelector('.success__closer__form');
-const subscribeForm2 = document.querySelector('.contact_form');
+const subscribeForm2 = document.querySelector('.contact__form');
 
 const closeByEsc2 = () => {
   document.addEventListener('keydown', (evt) => {

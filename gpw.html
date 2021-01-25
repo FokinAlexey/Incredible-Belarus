@@ -22,7 +22,7 @@
                     </a>
                 </div>
                 <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" type="checkbox" onclick="fun1()" />
                     <label class="menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
@@ -300,7 +300,7 @@
                     <li><a class="footer__navigation__link" href="gpw.html">ВОВ</a></li>
                 </ul>
             </nav>
-            <form class="contact_form">
+            <form class="contact__form">
                 <h3 class="footerH3">Связаться с администрацией:</h3>
                 <label class="label" for="name">Ваше имя:</label>
                 <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
@@ -314,7 +314,8 @@
                 <h3 class="footerH3">Наши контакты:</h3>
                 <ul class="ourContacts">
                     <li class="ourPhone">Наш телефон:&nbsp; <a href="tel:+37529*******"> +375 (29) *******</a></li>
-                    <li class="ourEmail">Наша почта:&nbsp; <a href="ouremail@gmail.com"> ouremail@gmail.com</a></li>
+                    <li class="ourEmail">Наша почта:&nbsp; <a href="mailto:ouremail@gmail.com"> ouremail@gmail.com</a>
+                    </li>
                     <li class="ourAddress">Наш адрес:&nbsp;<address>г. Минск Дворец Независимости </address>
                     </li>
                 </ul>
@@ -333,18 +334,14 @@
         </div>
         <div class="copyright"> © 2020—2021 Incredible Belarus</div>
     </footer>
-    <!-- Сообщение об успешной подписке -->
-    <div class="success">
-        <div class="success__overlay">
-            <div class="success__message">
-                <b>Спасибо!</b>
-                <p>Вы подписались на нашу новостную рассылку.</p>
-                <button class="success__closer" type="button" aria-label="Закрыть окно"></button>
+    <div class="success__form">
+        <div class="success__overlay__form">
+            <div class="success__message__form">
+                <p>Мы свяжемся с вами в ближайшее время!</p>
+                <button class="success__closer__form" type="button" aria-label="Закрыть окно"></button>
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/2e224a62e7.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
