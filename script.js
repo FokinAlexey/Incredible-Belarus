@@ -107,6 +107,20 @@ if (subscribeForm) {
 
 {/* <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af3740b177900d2b9b2ddf5466a5e66db02cbcb3c4b3afe5fa779a45b70551ce2&amp;width=476&amp;height=391&amp;lang=ru_RU&amp;scroll=true"></script> */ }
 
+// block scroll
+const checkBox = document.getElementById('menu__toggle');
+const fun1 = () => {
+
+  if (checkBox.checked) {
+    // add style in body
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    // remove style from body
+    document.querySelector("body").style.overflow = "auto";
+  }
+}
+
+
 // Слайдер с цитатами
 
 const multiItemSlider = (function () {
@@ -309,15 +323,15 @@ const submitSubscribeForm2 = (evt) => {
 if (subscribeForm2) {
   subscribeForm2.addEventListener('submit', submitSubscribeForm2);
 }
-// block scroll
-const checkBox = document.getElementById('menu__toggle');
-const fun1 = () => {
+// // block scroll
+// const checkBox = document.getElementById('menu__toggle');
+// const fun1 = () => {
 
-  if (checkBox.checked) {
-    // add style in body
-    document.querySelector("body").style.overflow = "hidden";
-  } else {
-    // remove style from body
-    document.querySelector("body").style.overflow = "auto";
-  }
-}
+//   if (checkBox.checked) {
+//     // add style in body
+//     document.querySelector("body").style.overflow = "hidden";
+//   } else {
+//     // remove style from body
+//     document.querySelector("body").style.overflow = "auto";
+//   }
+// }
