@@ -325,3 +325,20 @@ const fun1 = () => {
     document.querySelector("body").style.overflow = "auto";
   }
 }
+
+const scrollToTop = () => {
+
+  const anchor = document.querySelector('.js-up-btn');
+
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.body.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
+  });
+};
+
+scrollToTop();
