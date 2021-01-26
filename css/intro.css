@@ -4,12 +4,36 @@
 }
 
 .intro__title {
+  position: relative;
   width: 100%;
   margin: 0 0 25px 0;
   font-size: 35px;
   line-height: 45px;
   text-transform: uppercase;
   text-align: center;
+  color: #3b0866;
+}
+
+.intro__title:before {
+  content: "";
+  border-bottom: 1px solid #7db6f7;
+  border-top: 1px solid #7db6f7;
+  width: 40px;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+}
+
+.intro__title:after {
+  content: "";
+  border-bottom: 1px solid #7db6f7;
+  border-top: 1px solid #7db6f7;
+  width: 40px;
+  height: 0.1em;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
 }
 
 .intro__text {
@@ -19,7 +43,7 @@
   font-size: 22px;
   line-height: 30px;
   text-align: center;
-  color: #0f0426;
+  color:#073871;
   font-style: italic;
 }
 
@@ -53,5 +77,9 @@
   
   .intro__text-block {
     width: 100%;
+  }
+
+  .intro__title:before, .intro__title:after {
+    display: none;
   }
 }
