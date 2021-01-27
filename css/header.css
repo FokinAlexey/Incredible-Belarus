@@ -15,6 +15,10 @@
     margin-left: 10px;
 } */
 
+.navigation__link__active {
+    border-bottom: 1px solid #fff;
+}
+
 .navigation__links {
     display: flex;
     /* justify-content: end;
@@ -35,8 +39,8 @@
     text-decoration: none;
     /* font-size: 1.5rem;
     font-weight: 900; */
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #fff;
     padding: 10px;
