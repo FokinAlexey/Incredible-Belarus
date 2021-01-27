@@ -1,3 +1,12 @@
+/* @keyframes color {
+  50% {
+    color:#3f83d1;
+  }
+  100% {
+    color: #13043d;
+  }
+} */
+
 .intro {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -43,12 +52,21 @@
   font-size: 22px;
   line-height: 30px;
   text-align: center;
-  color:#073871;
+  color:#3f83d1;
   font-style: italic;
 }
 
+.intro__text-wave {
+  font-size: 22px;
+  line-height: 30px;
+  font-style: italic;
+  color:#3f83d1;
+}
+
 .intro__text-block {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (max-width: 1023px) {
@@ -71,6 +89,11 @@
   }
 
   .intro__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .intro__text-wave {
     font-size: 18px;
     line-height: 25px;
   }
