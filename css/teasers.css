@@ -86,7 +86,6 @@
   .teasers__item {
     display: flex;
     flex-direction: column;
-    min-height: 320px;
   }
 
   .teasers__item-text {
