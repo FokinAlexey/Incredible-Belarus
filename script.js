@@ -61,7 +61,7 @@ const initSliderTeasers = () => {
     loop: true,
     slidesPerView: 1,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
 
     pagination: {
@@ -342,3 +342,29 @@ const scrollToTop = () => {
 };
 
 scrollToTop();
+
+const wrapperIntro = document.querySelector('.intro__text-block');
+
+const addTextAnimation = () => {
+  const textIntro = document.querySelector('.intro__text');
+  const textCont = textIntro.textContent;
+  textIntro.style.display = "none";
+
+  for (let i = 0; i < textCont.length; i++) {
+    (function(i) {
+      setTimeout(function() {
+        let texts = document.createTextNode(textCont[i]);
+        let span = document.createElement('span');
+        span.appendChild(texts);
+  
+        span.classList.add('intro__text-wave');
+        wrapperIntro.appendChild(span);
+  
+      }, 15 * i);
+    }(i));
+  }
+};
+
+if(wrapperIntro) {
+  addTextAnimation();
+}
