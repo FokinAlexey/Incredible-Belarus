@@ -345,26 +345,26 @@ scrollToTop();
 
 const wrapperIntro = document.querySelector('.intro__text-block');
 
-const addTextAnimation = () => {
-  const textIntro = document.querySelector('.intro__text');
-  const textCont = textIntro.textContent;
-  textIntro.style.display = "none";
+// const addTextAnimation = () => {
+//   const textIntro = document.querySelector('.intro__text');
+//   const textCont = textIntro.textContent;
+//   textIntro.style.display = "none";
 
-  for (let i = 0; i < textCont.length; i++) {
-    (function(i) {
-      setTimeout(function() {
-        let texts = document.createTextNode(textCont[i]);
-        let span = document.createElement('span');
-        span.appendChild(texts);
+//   for (let i = 0; i < textCont.length; i++) {
+//     (function(i) {
+//       setTimeout(function() {
+//         let texts = document.createTextNode(textCont[i]);
+//         let span = document.createElement('span');
+//         span.appendChild(texts);
   
-        span.classList.add('intro__text-wave');
-        wrapperIntro.appendChild(span);
+//         span.classList.add('intro__text-wave');
+//         wrapperIntro.appendChild(span);
   
-      }, 15 * i);
-    }(i));
-  }
-};
+//       }, 15 * i);
+//     }(i));
+//   }
+// };
 
-if(wrapperIntro) {
-  addTextAnimation();
-}
+// if(wrapperIntro) {
+//   addTextAnimation();
+// }

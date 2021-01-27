@@ -21,7 +21,10 @@
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <div class="hamburger-menu">
@@ -41,7 +44,7 @@
   </header>
 
   <main>
-    <div class="intro container">
+    <!-- <div class="intro container">
       <h2 class="intro__title">Беларусь невероятная!</h2>
       <div class="intro__text-block">
         <p class="intro__text">
@@ -51,29 +54,44 @@
           жемчужинами нашей страны.
         </p>
       </div>
-    </div>
+    </div> -->
     <section class="teasers">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class=" teasers__slider swiper-container">
         <ul class="teasers__list swiper-wrapper">
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Куды б нi паехаý, цябе сустракаюць непаýторныя краявiды.</b>
+            <div class="teasers__item-text">
+              <b>Куды б нi паехаý, цябе сустракаюць непаýторныя краявiды.</b>
+              <a class="button" href="castles.html">Подробнее о замках</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь - гэта край легенд, казак і паданняў.</b>
+            <div class="teasers__item-text">
+              <b>Беларусь - гэта край легенд, казак і паданняў.</b>
+              <a class="button" href="castles.html">Подробнее о замках</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="555" alt="Фото">
           </li>
-          <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Дзесяццю тысячамі блакiтных вачэй пазiрае мая радзiма на Млечны Шлях.</b>
+          <!-- <li class="teasers__item swiper-slide">
+            <div class="teasers__item-text">
+              <b>Дзесяццю тысячамі блакiтных вачэй пазiрае мая радзiма на Млечны Шлях.</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="555" alt="Фото">
-          </li>
+          </li> -->
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь, мая сонца-краіна!</b>
+            <div class="teasers__item-text">
+              <b>Беларусь, мая сонца-краіна!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Паклон табе, мой беларускі край!</b>
+            <div class="teasers__item-text">
+              <b>Паклон табе, мой беларускі край!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="555" alt="Фото">
           </li>
         </ul>
@@ -257,7 +275,10 @@
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <ul class="footer__navigation__links">

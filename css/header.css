@@ -66,6 +66,13 @@
     margin-left: auto;
 }
 
+@media (max-width: 1023px) {
+  .navigation__logo img {
+    width: 150px;
+    height: 75px;
+  }
+}
+
 
 /* hamburger menu */
 
