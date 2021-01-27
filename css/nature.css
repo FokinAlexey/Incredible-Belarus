@@ -105,7 +105,38 @@ padding: 15px 25px;
     
 }
 
+.nature-block__teaser {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
 
+.nature-block__teaser img {
+  width: 100%;
+  height: auto;
+}
+
+.nature-block__title {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  margin: 0;
+  color: #fff;
+  font-size: 35px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .nature-block__title {
+    top: 3%;
+    left: 5%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+ 
 
 
 
