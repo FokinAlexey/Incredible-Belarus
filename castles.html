@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Невероятная Беларусь</title>
+  <meta name="description" content="Самые красивые замки Беларуси">
+  <title>Замки Беларуси</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
@@ -15,7 +18,7 @@
 
 <body>
   <header class="header">
-    <h1 class="visually-hidden">Невероятная Беларусь</h1>
+    <h1 class="visually-hidden">Замки Беларуси</h1>
     <div class="inner container">
       <nav class="navigation">
         <div class="navigation__logo">
@@ -31,7 +34,7 @@
           <ul class="navigation__links menu__box">
             <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
             <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
-            <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
+            <li><a class="navigation__link navigation__link__active menu__item" href="castles.html"> Замки</a></li>
             <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
           </ul>
         </div>
@@ -42,11 +45,20 @@
     <section class="castles-block">
       <div class="castles-block__content">
         <div class="castles-block__teaser">
-          <img src="./assets/img/castles/castles-block.jpg" alt="Фото" width="1920" height="950">
-          <h2 class="castles-block__title">Самые красивые замки Беларуси</h2>
+          <div class="castles-block__teaser-container container">
+            <h2 class="castles-block__title">Самые красивые замки Беларуси</h2>
+            <div class="castles-block__list">
+              <a class="castles-block__link" href="#mir-castle">
+                Мирский замок
+              </a>
+              <a class="castles-block__link" href="#nesvizh-castle">
+                Несвижский замок
+              </a>
+            </div>
+          </div>
         </div>
         <div class="container">
-          <div class="castles-block__item">
+          <div class="castles-block__item" id="nesvizh-castle">
             <h2 class="castles__title">Несвижский замок</h2>
             <p class="castles-block__text">
               Несвижский замок&nbsp;&mdash; дворцово-замковый комплекс, расположенный возле маленького белорусского
@@ -64,7 +76,7 @@
               </div>
               <div class="castles-block__info-tell">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:+375 17 702-06-02">+375 17 702-06-02</a>
+                <a href="tel:+375177020602">+375 17 702-06-02</a>
               </div>
             </div>
             <div class="castles-block__img">
@@ -76,8 +88,9 @@
                 height="318">
             </div>
             <div class="castles-block__nesvizh nesvizh">
-              <h3 class="nesvizh__title castles__title castles__title--subtitle">5 причин приехать в Несвиж в замок
-                Радзивиллов</h3>
+              <h3 class="nesvizh__title castles__title castles__title--subtitle">
+                5 причин приехать в Несвиж в замок Радзивиллов
+              </h3>
               <ul class="nesvizh__list">
                 <li class="nesvizh__item scrooll-item">
                   <div class="nesvizh__item-intro">
@@ -137,7 +150,6 @@
                     на&nbsp;ярмарке той поры и&nbsp;на&nbsp;концерте фолк-групп, увидите огненное шоу, средневековые
                     танцы и&nbsp;игры.
                   </p>
-                  </p>
                 </li>
                 <li class="nesvizh__item scrooll-item">
                   <div class="nesvizh__item-intro">
@@ -156,7 +168,7 @@
               </ul>
             </div>
           </div>
-          <div class="castles-block__item">
+          <div class="castles-block__item" id="mir-castle">
             <h2 class="castles__title">Мирский замок</h2>
             <p class="castles-block__text">
               Замковый комплекс &laquo;Мир&raquo; XVI&ndash;XX&nbsp;вв.&nbsp;в&nbsp;г.п. Мир&nbsp;&mdash;
@@ -174,7 +186,7 @@
               </div>
               <div class="castles-block__info-tell">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:+375 15 963-62-70">+375 15 963-62-70</a>
+                <a href="tel:+375159636270">+375 15 963-62-70</a>
               </div>
             </div>
             <div class="castles-block__img">
@@ -285,7 +297,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
@@ -319,18 +331,21 @@
         </ul>
         <h3 class="footerH3">Социальные сети:</h3>
         <ul class="socialMedia">
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/facebook.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/Instagram.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/twitter.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/youtube.png" alt="IMG"
                 class="mediaIMG"></a></li>
         </ul>
       </section>
     </div>
-    <div class="copyright"> © 2020—2021 Incredible Belarus</div>
+    <div class="footer__bottom container">
+      <p class="footer__copyright"> © 2020—2021 Incredible Belarus</p>
+      <a class="footer__bottom-anchor js-up-btn" href="#">Наверх</a>
+    </div>
   </footer>
   <div class="success__form">
     <div class="success__overlay__form">

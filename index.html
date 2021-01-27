@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Достопримечательности Беларуси">
   <title>Невероятная Беларусь</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -27,7 +30,7 @@
             <span></span>
           </label>
           <ul class="navigation__links menu__box">
-            <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
+            <li><a class="navigation__link navigation__link__active menu__item" href="index.html">Главная</a></li>
             <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
             <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
             <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
@@ -39,16 +42,13 @@
 
   <main>
     <div class="intro container">
+      <h2 class="intro__title">Беларусь невероятная!</h2>
       <div class="intro__text-block">
-        <h2 class="intro__title">Достопримечательности Беларуси</h2>
         <p class="intro__text">
-          Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Здесь нет изобилия архитектурных
+          Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Это&nbsp;&mdash; край лесов, озер, зубров
+          и&nbsp;аистов. Здесь нет изобилия архитектурных
           памятников старины, они разрушены безжалостным военным временем. Но&nbsp;те, что сохранились, являются
           жемчужинами нашей страны.
-        </p>
-        <p class="intro__text">
-          Беларусь&nbsp;&mdash; край лесов, озер, зубров и&nbsp;аистов. Она останется в&nbsp;сердце чистыми
-          городами, уютными деревнями, неповторимой заповедной природой, старинными местами, театрами и&nbsp;музеями.
         </p>
       </div>
     </div>
@@ -97,7 +97,7 @@
           <h3 class="facts__title">Интересные факты о Беларуси</h3>
           <ul class="facts__list">
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-globe-europe"></i>
               <p class="facts__text">
                 Территория Беларуси&nbsp;&mdash; 207 тысяч&nbsp;кв.&nbsp;км. Это 84&nbsp;страна по&nbsp;размеру
                 в&nbsp;мире&nbsp;и, вопреки общему мнению, это далеко не&nbsp;самая маленькая страна в&nbsp;Европе,
@@ -106,7 +106,7 @@
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-leaf"></i>
               <p class="facts__text">
                 Беларусь самая равнинная страна Европы, здесь самые минимальные перепады высот и&nbsp;полностью
                 отсутствуют горные массивы. Это страна, болота которой занимают площадь равную территории таких
@@ -114,7 +114,7 @@
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-water"></i>
               <p class="facts__text">
                 Через территорию Беларуси протекают 20800&nbsp;рек. Рек, длина которых более 500&nbsp;км., всего девять:
                 Березина,которая протекает целиком по&nbsp;территории Беларуси; Нёман и&nbsp;Вилия, берущие свое начало
@@ -123,46 +123,71 @@
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fab fa-fort-awesome"></i>
               <p class="facts__text">
                 На&nbsp;относительно компактной территории Беларуси расположено довольно много дворцов и&nbsp;замков,
-                два из&nbsp;которых заслуженно пополняют список Всемирного наследия Юнеско: <a
-                  href="https://niasvizh.by" target="_blank" rel="nofollow noopener">Несвижский дворец</a>, а&nbsp;также
-                <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">Мирский замок</a>&nbsp;&mdash;
-                мощное оборонительное сооружение, отлично сохранившееся до&nbsp;наших времен.
+                два из&nbsp;которых заслуженно пополняют список Всемирного наследия Юнеско:
+                <dfn class="facts__dfn" data-info="Узнайте больше о Несвижском замке!">
+                  <a href="https://niasvizh.by" target="_blank" rel="nofollow noopener">
+                    Несвижский дворец
+                  </a>
+                </dfn>
+                , а&nbsp;также
+                <dfn class="facts__dfn" data-info="Узнайте больше о Мирском замке!">
+                  <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">
+                    Мирский замок
+                  </a>
+                </dfn>
+                &nbsp;&mdash;мощное оборонительное сооружение, отлично сохранившееся до&nbsp;наших времен.
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fab fa-fort-awesome-alt"></i>
               <p class="facts__text">
-                В&nbsp;Беларуси находится самый восточный готический объект на&nbsp;территории Европы. Это <a
-                  href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">Мирский замок</a>, который был
-                построен более 500 лет назад с&nbsp;соблюдением всех
-                архитектурных готических канонов.
+                В&nbsp;Беларуси находится самый восточный готический объект на территории Европы. Этот замок -
+                <dfn class="facts__dfn" data-info="Узнайте больше о Мирском замке!">
+                  <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">
+                    Мирский замок
+                  </a>
+                </dfn>, который был построен более 500 лет назад с&nbsp;соблюдением всех архитектурных готических
+                канонов.
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-place-of-worship"></i>
               <p class="facts__text">
-                В&nbsp;<a href="http://spas-monastery.by/" target="_blank" rel="nofollow noopener">Спасо-Преображенской
-                  церкви Полоцкого Свято-Ефросиниевского монастыря</a>
+                В&nbsp;
+                <dfn class="facts__dfn"
+                  data-info="Посетите сайт Спасо-Преображенской церкви Полоцкого Свято-Ефросиниевского монастыря">
+                  <a href="http://spas-monastery.by/" target="_blank" rel="nofollow noopener">
+                    Спасо-Преображенской церкви Полоцкого Свято-Ефросиниевского монастыря
+                  </a>
+                </dfn>
                 сохранились уникальные росписи 12&nbsp;века, аналогов которым нет в&nbsp;Восточной Европе.
                 Их&nbsp;обнаружили совсем недавно под несколькими слоями фресок более позднего времени.
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-map-marked-alt"></i>
               <p class="facts__text">
                 Беларусь занимает первое место по&nbsp;количеству вольноживущих зубров, которые были еще меньше 100 лет
                 под угрозой вымирания. В&nbsp;конце 2019 года поголовье белорусских зубров составило почти
                 1900&nbsp;голов. Они обитают в&nbsp;9&nbsp;различных лесных массивах республики. Самое большое стадо
-                проживает в&nbsp;<a href="https://npbp.by/" target="_blank" rel="nofollow noopener">Беловежской Пуще</a>
-                и&nbsp;в&nbsp;<a href="https://www.npp.by/" target="_blank" rel="nofollow noopener">Припятском
-                  национальном парке</a>.
+                проживает в&nbsp;
+                <dfn class="facts__dfn" data-info="Узнать больше о Беловежской Пуще">
+                  <a href="https://npbp.by/" target="_blank" rel="nofollow noopener">Беловежской Пуще</a>
+                </dfn>
+                и&nbsp;в&nbsp;
+                <dfn class="facts__dfn" data-info="Больше информации о Припятском национальном парке">
+                  <a href="https://www.npp.by/" target="_blank" rel="nofollow noopener">
+                    Припятском национальном парке
+                  </a>
+                </dfn>
+                .
               </p>
             </li>
             <li class="facts__item scrooll-item">
-              <i class="fa fa-pagelines" aria-hidden="true"></i>
+              <i class="fas fa-road"></i>
               <p class="facts__text">
                 Интересен факт, что самая длинная улица в&nbsp;Беларуси&nbsp;&mdash; Проспект Независимости
                 в&nbsp;Минске. За&nbsp;свою историю она не&nbsp;только вырастала в&nbsp;длину и&nbsp;ширину,
@@ -176,10 +201,10 @@
     </section>
     <section class="preview">
       <div class="preview__content container">
-        <h2 class="preview__title">Самые уникальные и красивые места Беларуси</h2>
+        <h2 class="preview__title">Места Беларуси, которые стоит посетить</h2>
         <ul class="preview__list">
           <li class="preview__item">
-            <a class="preview__link" href="#nowhear">
+            <a class="preview__link" href="castles.html">
               <h3 class="preview__item-title">Замки Беларуси</h3>
               <div class="preview__img-wrapper">
                 <img class="preview__img" src="assets/img/preview/preview-1.jpg" width="400" height="250" alt="Фото">
@@ -188,28 +213,29 @@
             <a class="button" href="castles.html">Подробнее</a>
           </li>
           <li class="preview__item">
-            <a class="preview__link" href="#nowhear">
+            <a class="preview__link" href="nature.html">
               <h3 class="preview__item-title">Природа Беларуси</h3>
               <div class="preview__img-wrapper">
                 <img class="preview__img" src="assets/img/preview/preview-2.jpg" width="400" height="250" alt="Фото">
               </div>
             </a>
-            <a class="button" href="#nowhear">Подробнее</a>
+            <a class="button" href="nature.html">Подробнее</a>
           </li>
           <li class="preview__item">
-            <a class="preview__link" href="#nowhear">
+            <a class="preview__link" href="gpw.html">
               <h3 class="preview__item-title">Памятники ВОВ</h3>
               <div class="preview__img-wrapper">
                 <img class="preview__img" src="assets/img/preview/preview-3.jpg" width="400" height="250" alt="Фото">
               </div>
             </a>
-            <a class="button" href="#nowhear">Подробнее</a>
+            <a class="button" href="gpw.html">Подробнее</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1yRrGTJCmAuDjCn5YwNWumxS5Uf5xJ3Qr" width=100%
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1yRrGTJCmAuDjCn5YwNWumxS5Uf5xJ3Qr" style="width:100%"
         height="680"></iframe>
     </section>
 
@@ -227,7 +253,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__container container">
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
@@ -261,18 +287,21 @@
         </ul>
         <h3 class="footerH3">Социальные сети:</h3>
         <ul class="socialMedia">
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/facebook.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/Instagram.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/twitter.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/youtube.png" alt="IMG"
                 class="mediaIMG"></a></li>
         </ul>
       </section>
     </div>
-    <div class="copyright"> © 2020—2021 Incredible Belarus</div>
+    <div class="footer__bottom container">
+      <p class="footer__copyright"> © 2020—2021 Incredible Belarus</p>
+      <a class="footer__bottom-anchor js-up-btn" href="#">Наверх</a>
+    </div>
   </footer>
   <div class="success__form">
     <div class="success__overlay__form">

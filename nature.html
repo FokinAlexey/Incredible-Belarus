@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -34,7 +36,8 @@
 
                     <ul class="navigation__links menu__box">
                         <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
-                        <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
+                        <li><a class="navigation__link navigation__link__active menu__item"
+                                href="nature.html">Природа</a></li>
                         <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
                         <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
                     </ul>
@@ -48,9 +51,9 @@
 
     <section class="swamp">
 
-        <div class="castles-block__teaser">
+        <div class="nature-block__teaser">
             <img src="./assets/img/nature/nature_main_1920.jpg" alt="Фото" width="1920" height="950">
-            <h2 class="castles-block__title">Природа Беларуси</h2>
+            <h2 class="nature-block__title">Природа Беларуси</h2>
         </div>
 
         <div class="container">
@@ -356,7 +359,7 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
             <nav class="footer__navigation">
                 <div class="navigation__logo">
                     <a href="index.html">
@@ -391,18 +394,21 @@
                 </ul>
                 <h3 class="footerH3">Социальные сети:</h3>
                 <ul class="socialMedia">
-                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+                    <li><a href="#" onclick="return false"><img src="assets/img/social-media/facebook.png" alt="IMG"
                                 class="mediaIMG"></a></li>
-                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+                    <li><a href="#" onclick="return false"><img src="assets/img/social-media/Instagram.png" alt="IMG"
                                 class="mediaIMG"></a></li>
-                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+                    <li><a href="#" onclick="return false"><img src="assets/img/social-media/twitter.png" alt="IMG"
                                 class="mediaIMG"></a></li>
-                    <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+                    <li><a href="#" onclick="return false"><img src="assets/img/social-media/youtube.png" alt="IMG"
                                 class="mediaIMG"></a></li>
                 </ul>
             </section>
         </div>
-        <div class="copyright"> © 2020—2021 Incredible Belarus</div>
+        <div class="footer__bottom container">
+            <p class="footer__copyright"> © 2020—2021 Incredible Belarus</p>
+            <a class="footer__bottom-anchor js-up-btn" href="#">Наверх</a>
+        </div>
     </footer>
     <div class="success__form">
         <div class="success__overlay__form">
