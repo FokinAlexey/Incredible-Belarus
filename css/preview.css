@@ -98,7 +98,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  margin: 12px 0 0 12px;
   opacity: 0;
   transition: .3s;
 }
