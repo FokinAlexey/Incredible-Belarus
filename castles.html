@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Самые красивые замки Беларуси">
-  <title>Невероятная Беларусь</title>
+  <title>Замки Беларуси</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
@@ -16,12 +18,15 @@
 
 <body>
   <header class="header">
-    <h1 class="visually-hidden">Невероятная Беларусь</h1>
+    <h1 class="visually-hidden">Замки Беларуси</h1>
     <div class="inner container">
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <div class="hamburger-menu">
@@ -32,7 +37,7 @@
           <ul class="navigation__links menu__box">
             <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
             <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
-            <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
+            <li><a class="navigation__link navigation__link__active menu__item" href="castles.html"> Замки</a></li>
             <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
           </ul>
         </div>
@@ -45,14 +50,18 @@
         <div class="castles-block__teaser">
           <div class="castles-block__teaser-container container">
             <h2 class="castles-block__title">Самые красивые замки Беларуси</h2>
-            <div class="castles-block__list">
+            <ul class="castles-block__list">
+              <li>
                 <a class="castles-block__link" href="#mir-castle">
                   Мирский замок
                 </a>
+              </li>
+              <li>
                 <a class="castles-block__link" href="#nesvizh-castle">
                   Несвижский замок
                 </a>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="container">
@@ -299,7 +308,10 @@
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <ul class="footer__navigation__links">
@@ -329,13 +341,13 @@
         </ul>
         <h3 class="footerH3">Социальные сети:</h3>
         <ul class="socialMedia">
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/facebook.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/Instagram.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/twitter.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/youtube.png" alt="IMG"
                 class="mediaIMG"></a></li>
         </ul>
       </section>

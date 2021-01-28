@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Достопримечательности Беларуси">
   <title>Невероятная Беларусь</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -19,7 +21,10 @@
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <div class="hamburger-menu">
@@ -28,7 +33,7 @@
             <span></span>
           </label>
           <ul class="navigation__links menu__box">
-            <li><a class="navigation__link menu__item" href="index.html">Главная</a></li>
+            <li><a class="navigation__link navigation__link__active menu__item" href="index.html">Главная</a></li>
             <li><a class="navigation__link menu__item" href="nature.html">Природа</a></li>
             <li><a class="navigation__link menu__item" href="castles.html"> Замки</a></li>
             <li><a class="navigation__link menu__item" href="gpw.html">ВОВ</a></li>
@@ -39,38 +44,47 @@
   </header>
 
   <main>
-    <div class="intro container">
+    <!-- <div class="intro container">
       <h2 class="intro__title">Беларусь невероятная!</h2>
       <div class="intro__text-block">
         <p class="intro__text">
-          Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Это&nbsp;&mdash; край лесов, озер, зубров и&nbsp;аистов. Здесь нет изобилия архитектурных
+          Беларусь&nbsp;&mdash; это небольшая страна в&nbsp;сердце Европы. Это&nbsp;&mdash; край лесов, озер, зубров
+          и&nbsp;аистов. Здесь нет изобилия архитектурных
           памятников старины, они разрушены безжалостным военным временем. Но&nbsp;те, что сохранились, являются
           жемчужинами нашей страны.
         </p>
       </div>
-    </div>
+    </div> -->
     <section class="teasers">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class=" teasers__slider swiper-container">
         <ul class="teasers__list swiper-wrapper">
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Куды б нi паехаý, цябе сустракаюць непаýторныя краявiды.</b>
+            <div class="teasers__item-text">
+              <b>Прекрасные пейзажи!</b>
+              <a class="button" href="castles.html">Подробнее о замках</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь - гэта край легенд, казак і паданняў.</b>
+            <div class="teasers__item-text">
+              <b>Край легенд и преданий!</b>
+              <a class="button" href="castles.html">Подробнее о замках</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Дзесяццю тысячамі блакiтных вачэй пазiрае мая радзiма на Млечны Шлях.</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="555" alt="Фото">
-          </li>
-          <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь, мая сонца-краіна!</b>
+            <div class="teasers__item-text">
+              <b>Земля под белыми крыльями!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Паклон табе, мой беларускі край!</b>
+            <div class="teasers__item-text">
+              <b>Край сильных духом людей!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="555" alt="Фото">
           </li>
         </ul>
@@ -122,37 +136,40 @@
             <li class="facts__item scrooll-item">
               <i class="fab fa-fort-awesome"></i>
               <p class="facts__text">
-                На&nbsp;относительно компактной территории Беларуси расположено довольно много дворцов и&nbsp;замков, два из&nbsp;которых заслуженно пополняют список Всемирного наследия Юнеско:
+                На&nbsp;относительно компактной территории Беларуси расположено довольно много дворцов и&nbsp;замков,
+                два из&nbsp;которых заслуженно пополняют список Всемирного наследия Юнеско:
                 <dfn class="facts__dfn" data-info="Узнайте больше о Несвижском замке!">
                   <a href="https://niasvizh.by" target="_blank" rel="nofollow noopener">
                     Несвижский дворец
                   </a>
-                </dfn> 
-                  , а&nbsp;также
-                  <dfn class="facts__dfn" data-info="Узнайте больше о Мирском замке!">
-                    <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">
-                      Мирский замок
-                    </a>
-                  </dfn>
+                </dfn>
+                , а&nbsp;также
+                <dfn class="facts__dfn" data-info="Узнайте больше о Мирском замке!">
+                  <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">
+                    Мирский замок
+                  </a>
+                </dfn>
                 &nbsp;&mdash;мощное оборонительное сооружение, отлично сохранившееся до&nbsp;наших времен.
               </p>
             </li>
             <li class="facts__item scrooll-item">
               <i class="fab fa-fort-awesome-alt"></i>
               <p class="facts__text">
-                В&nbsp;Беларуси находится самый восточный готический объект на территории Европы. Этот замок - 
+                В&nbsp;Беларуси находится самый восточный готический объект на территории Европы. Этот замок -
                 <dfn class="facts__dfn" data-info="Узнайте больше о Мирском замке!">
                   <a href="https://mirzamak.by/" target="_blank" rel="nofollow noopener">
                     Мирский замок
                   </a>
-                </dfn>, который был построен более 500 лет назад с&nbsp;соблюдением всех архитектурных готических канонов.
+                </dfn>, который был построен более 500 лет назад с&nbsp;соблюдением всех архитектурных готических
+                канонов.
               </p>
             </li>
             <li class="facts__item scrooll-item">
               <i class="fas fa-place-of-worship"></i>
               <p class="facts__text">
                 В&nbsp;
-                <dfn class="facts__dfn" data-info="Посетите сайт Спасо-Преображенской церкви Полоцкого Свято-Ефросиниевского монастыря">
+                <dfn class="facts__dfn"
+                  data-info="Посетите сайт Спасо-Преображенской церкви Полоцкого Свято-Ефросиниевского монастыря">
                   <a href="http://spas-monastery.by/" target="_blank" rel="nofollow noopener">
                     Спасо-Преображенской церкви Полоцкого Свято-Ефросиниевского монастыря
                   </a>
@@ -228,7 +245,8 @@
       </div>
     </section>
     <section class="map">
-      <iframe src="https://www.google.com/maps/d/embed?mid=1yRrGTJCmAuDjCn5YwNWumxS5Uf5xJ3Qr" width=100%
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1yRrGTJCmAuDjCn5YwNWumxS5Uf5xJ3Qr" style="width:100%"
         height="680"></iframe>
     </section>
 
@@ -250,7 +268,10 @@
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <ul class="footer__navigation__links">
@@ -280,13 +301,13 @@
         </ul>
         <h3 class="footerH3">Социальные сети:</h3>
         <ul class="socialMedia">
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/facebook.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/facebook.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/Instagram.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/Instagram.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/twitter.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/twitter.png" alt="IMG"
                 class="mediaIMG"></a></li>
-          <li><a href="#" onclick="return false" ;><img src="assets/img/social-media/youtube.png" alt="IMG"
+          <li><a href="#" onclick="return false"><img src="assets/img/social-media/youtube.png" alt="IMG"
                 class="mediaIMG"></a></li>
         </ul>
       </section>

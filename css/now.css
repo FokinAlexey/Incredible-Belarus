@@ -82,6 +82,22 @@
   color: #fff;
 }
 
+@media(max-width: 1023px) {
+  .now {
+    padding: 20px;
+  }
+
+  .now__pags .swiper-pagination-current, .now__pags .swiper-pagination-total {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .now__control {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media(max-width: 767px) {
   .now {
     position: static;
@@ -95,11 +111,6 @@
 
   .now__pags::before {
     height: 20px;
-  }
-
-  .now__control {
-    width: 40px;
-    height: 40px;
   }
 
   .now__control--prev,
