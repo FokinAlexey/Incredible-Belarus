@@ -46,6 +46,7 @@
   font-size: 32px;
   line-height: 40px;
   color: #fff;
+  transition: all 0.3s;
 }
 
 @media (max-width: 1023px) {

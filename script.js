@@ -61,7 +61,7 @@ const initSliderTeasers = () => {
     loop: true,
     slidesPerView: 1,
     autoplay: {
-      delay: 3000,
+      delay: 5000,
     },
 
     pagination: {
@@ -327,15 +327,58 @@ const submitSubscribeForm2 = (evt) => {
 if (subscribeForm2) {
   subscribeForm2.addEventListener('submit', submitSubscribeForm2);
 }
-// // block scroll
-// const checkBox = document.getElementById('menu__toggle');
-// const fun1 = () => {
+// block scroll
+const checkBox = document.getElementById('menu__toggle');
+const fun1 = () => {
 
-//   if (checkBox.checked) {
-//     // add style in body
-//     document.querySelector("body").style.overflow = "hidden";
-//   } else {
-//     // remove style from body
-//     document.querySelector("body").style.overflow = "auto";
-//   }
-// }
+  if (checkBox.checked) {
+    // add style in body
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    // remove style from body
+    document.querySelector("body").style.overflow = "auto";
+  }
+}
+
+const scrollToTop = () => {
+
+  const anchor = document.querySelector('.js-up-btn');
+
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.body.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
+  });
+};
+
+scrollToTop();
+
+const wrapperIntro = document.querySelector('.intro__text-block');
+
+const addTextAnimation = () => {
+  const textIntro = document.querySelector('.intro__text');
+  const textCont = textIntro.textContent;
+  textIntro.style.display = "none";
+
+  for (let i = 0; i < textCont.length; i++) {
+    (function (i) {
+      setTimeout(function () {
+        let texts = document.createTextNode(textCont[i]);
+        let span = document.createElement('span');
+        span.appendChild(texts);
+
+        span.classList.add('intro__text-wave');
+        wrapperIntro.appendChild(span);
+
+      }, 15 * i);
+    }(i));
+  }
+};
+
+if (wrapperIntro) {
+  addTextAnimation();
+}
