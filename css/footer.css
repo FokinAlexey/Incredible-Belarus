@@ -191,6 +191,10 @@
     .contact__form {
         width: 60%;
     }
+
+  .footer__copyright {
+    width: 100%;
+  }
 }   
 
 @media (max-width: 767px) {
