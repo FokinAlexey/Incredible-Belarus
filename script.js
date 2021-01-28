@@ -328,17 +328,17 @@ if (subscribeForm2) {
   subscribeForm2.addEventListener('submit', submitSubscribeForm2);
 }
 // block scroll
-const checkBox = document.getElementById('menu__toggle');
-const fun1 = () => {
+// const checkBox = document.getElementById('menu__toggle');
+// const fun1 = () => {
 
-  if (checkBox.checked) {
-    // add style in body
-    document.querySelector("body").style.overflow = "hidden";
-  } else {
-    // remove style from body
-    document.querySelector("body").style.overflow = "auto";
-  }
-}
+//   if (checkBox.checked) {
+//     // add style in body
+//     document.querySelector("body").style.overflow = "hidden";
+//   } else {
+//     // remove style from body
+//     document.querySelector("body").style.overflow = "auto";
+//   }
+// }
 
 const scrollToTop = () => {
 
