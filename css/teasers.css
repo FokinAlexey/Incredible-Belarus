@@ -44,6 +44,7 @@
   top: 0;
   left: 20px;
   width: 90%;
+  font-family: "Spectral SC", "Arial", sans-serif;
   font-size: 32px;
   line-height: 40px;
   color: #fff;
@@ -54,18 +55,18 @@
   display: inline-block;
   margin-bottom: 30px;
   position: absolute;
-  top: 20px;
-  right: 0;
-  font-size: 45px;
+  top: 7%;
+  left: 0;
+  font-size: 55px;
   line-height: 55px;
-  text-align: right;
+  text-align: left;
 }
 
 .teasers__item-text a {
   position: absolute;
-  left: 0;
+  left: 10%;
   bottom: 20px;
-  width: 300px;
+  width: 350px;
   font-size: 20px;
   line-height: 20px;
   box-shadow: none;
@@ -101,16 +102,17 @@
 
   .teasers__item-text b {
     position: static;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 17px;
+    line-height: 18px;
     text-align: left;
     padding-top: 10px;
   }
 
   .teasers__item-text a {
     position: static;
+    width: 300px;
     margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 14px;
   }
 }
