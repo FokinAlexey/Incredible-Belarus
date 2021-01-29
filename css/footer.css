@@ -38,6 +38,10 @@
     transition: all .7s;  
 }
 
+.footer__navigation .navigation__logo {
+  margin-bottom: 30px;
+}
+
 .contact__form {
     display: flex;
     flex-direction: column;    
@@ -187,6 +191,10 @@
     .contact__form {
         width: 60%;
     }
+
+  .footer__copyright {
+    width: 100%;
+  }
 }   
 
 @media (max-width: 767px) {

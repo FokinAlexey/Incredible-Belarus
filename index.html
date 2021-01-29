@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Достопримечательности Беларуси">
   <title>Невероятная Беларусь</title>
+  <link rel="icon" type="image/png" href="./assets/img/header/favicon-16x16.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Spectral+SC&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -21,7 +24,10 @@
       <nav class="navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <div class="hamburger-menu">
@@ -41,7 +47,7 @@
   </header>
 
   <main>
-    <div class="intro container">
+    <!-- <div class="intro container">
       <h2 class="intro__title">Беларусь невероятная!</h2>
       <div class="intro__text-block">
         <p class="intro__text">
@@ -51,29 +57,37 @@
           жемчужинами нашей страны.
         </p>
       </div>
-    </div>
+    </div> -->
     <section class="teasers">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class=" teasers__slider swiper-container">
         <ul class="teasers__list swiper-wrapper">
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Куды б нi паехаý, цябе сустракаюць непаýторныя краявiды.</b>
+            <div class="teasers__item-text">
+              <b>Прекрасные пейзажи!</b>
+              <a class="button" href="castles.html#nesvizh-castle">Несвижский Замок</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-1.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь - гэта край легенд, казак і паданняў.</b>
+            <div class="teasers__item-text">
+              <b>Край легенд и преданий!</b>
+              <a class="button" href="castles.html#mir-castle">Мирский Замок</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-2.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Дзесяццю тысячамі блакiтных вачэй пазiрае мая радзiма на Млечны Шлях.</b>
-            <img class="teasers__img" src="assets/img/teasers/teaser-3.jpg" width="1200" height="555" alt="Фото">
-          </li>
-          <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Беларусь, мая сонца-краіна!</b>
+            <div class="teasers__item-text">
+              <b>Земля под белыми крыльями!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-4.jpg" width="1200" height="555" alt="Фото">
           </li>
           <li class="teasers__item swiper-slide">
-            <b class="teasers__item-text">Паклон табе, мой беларускі край!</b>
+            <div class="teasers__item-text">
+              <b>Край сильных духом людей!</b>
+              <a class="button" href="nature.html">Природа Беларуси</a>
+            </div>
             <img class="teasers__img" src="assets/img/teasers/teaser-5.jpg" width="1200" height="555" alt="Фото">
           </li>
         </ul>
@@ -201,34 +215,52 @@
     </section>
     <section class="preview">
       <div class="preview__content container">
-        <h2 class="preview__title">Места Беларуси, которые стоит посетить</h2>
+        <h2 class="preview__title">Узнай больше о красивых местах Беларуси!</h2>
         <ul class="preview__list">
           <li class="preview__item">
-            <a class="preview__link" href="castles.html">
-              <h3 class="preview__item-title">Замки Беларуси</h3>
-              <div class="preview__img-wrapper">
-                <img class="preview__img" src="assets/img/preview/preview-1.jpg" width="400" height="250" alt="Фото">
+            <div class="preview__item-wrapp">
+              <a class="preview__link" href="nature.html">
+                <h3 class="preview__item-title">Природа Беларуси</h3>
+                <div class="preview__img-wrapper">
+                  <img class="preview__img" src="assets/img/preview/preview-01.jpg" width="462" height="400" alt="Фото">
+                </div>
+              </a>
+              <div class="preview__line">
+                <a class="preview__line-link" href="nature.html">
+                  <span>Узнать больше</span>
+                </a>
               </div>
-            </a>
-            <a class="button" href="castles.html">Подробнее</a>
+            </div>
           </li>
           <li class="preview__item">
-            <a class="preview__link" href="nature.html">
-              <h3 class="preview__item-title">Природа Беларуси</h3>
-              <div class="preview__img-wrapper">
-                <img class="preview__img" src="assets/img/preview/preview-2.jpg" width="400" height="250" alt="Фото">
+            <div class="preview__item-wrapp">
+              <a class="preview__link" href="castles.html">
+                <h3 class="preview__item-title">Замки Беларуси</h3>
+                <div class="preview__img-wrapper">
+                  <img class="preview__img" src="assets/img/preview/preview-02.jpg" width="462" height="400" alt="Фото">
+                </div>
+              </a>
+              <div class="preview__line">
+                <a class="preview__line-link" href="castles.html">
+                  <span>Узнать больше</span>
+                </a>
               </div>
-            </a>
-            <a class="button" href="nature.html">Подробнее</a>
+            </div>
           </li>
           <li class="preview__item">
-            <a class="preview__link" href="gpw.html">
-              <h3 class="preview__item-title">Памятники ВОВ</h3>
-              <div class="preview__img-wrapper">
-                <img class="preview__img" src="assets/img/preview/preview-3.jpg" width="400" height="250" alt="Фото">
+            <div class="preview__item-wrapp">
+              <a class="preview__link" href="gpw.html">
+                <h3 class="preview__item-title">Эхо войны</h3>
+                <div class="preview__img-wrapper">
+                  <img class="preview__img" src="assets/img/preview/preview-03.jpg" width="462" height="400" alt="Фото">
+                </div>
+              </a>
+              <div class="preview__line">
+                <a class="preview__line-link" href="gpw.html">
+                  <span>Узнать больше</span>
+                </a>
               </div>
-            </a>
-            <a class="button" href="gpw.html">Подробнее</a>
+            </div>
           </li>
         </ul>
       </div>
@@ -244,7 +276,7 @@
         <h2 class="subscribe__title">Подпишитесь на наши новости!</h2>
         <form class="subscribe__form">
           <div class="subscribe__input">
-            <input id="email-subscribe" name="email" type="email" placeholder="Введите Ваш email" required>
+            <input id="email-subscribe" name="email" type="email" placeholder="Введите Ваш email" aria-label="Подписка на новости" required>
           </div>
           <button class="subscribe__button" type="submit">Отправить</button>
         </form>
@@ -257,7 +289,10 @@
       <nav class="footer__navigation">
         <div class="navigation__logo">
           <a href="index.html">
-            <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+            <picture>
+              <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+              <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+            </picture>
           </a>
         </div>
         <ul class="footer__navigation__links">
@@ -299,7 +334,7 @@
       </section>
     </div>
     <div class="footer__bottom container">
-      <p class="footer__copyright"> © 2020—2021 Incredible Belarus</p>
+      <p class="footer__copyright"> © 2020—2021 Разработчики: Анастасия Иванова, Алексей Фокин, Арсений Маслов</p>
       <a class="footer__bottom-anchor js-up-btn" href="#">Наверх</a>
     </div>
   </footer>

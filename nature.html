@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nature</title>
+    <meta name="description" content="Достопримечательности Беларуси">
+    <title>Природа Беларуси</title>
+    <link rel="icon" type="image/png" href="./assets/img/header/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,12 +26,15 @@
             <nav class="navigation">
                 <div class="navigation__logo">
                     <a href="index.html">
-                        <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+                            <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+                        </picture>
                     </a>
                 </div>
 
                 <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" onclick="fun1()" />
+                    <input id="menu__toggle" type="checkbox" onclick="fun1()">
                     <label class=" menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
@@ -50,16 +55,16 @@
 
 
     <section class="swamp">
-
         <div class="nature-block__teaser">
-            <img src="./assets/img/nature/nature_main_1920.jpg" alt="Фото" width="1920" height="950">
+            <!-- <img src="./assets/img/nature/nature_main_1920.jpg" alt="Фото" width="1920" height="950"> -->
             <h2 class="nature-block__title">Природа Беларуси</h2>
         </div>
 
         <div class="container">
             <div class="swamp__inner">
                 <h2 class="swamp__title"> Белорусские болота - легкие страны</h2>
-                <p>Hаша страна остается одним из лидеров по количеству болот - они занимают более 10% от площади
+                <p class=" swamp__text-text">Hаша страна остается одним из лидеров по количеству болот - они занимают
+                    более 10% от площади
                     Беларуси. </p>
                 <div class="swamp__cards">
                     <div class="swamp__text-title">
@@ -105,7 +110,6 @@
                     <div class="swamp__img">
                         <img src="./assets/img/nature/swamp-forest.jpg" alt="">
                     </div>
-
                 </div>
             </div>
 
@@ -114,10 +118,7 @@
                 <!-- <p> </p> -->
                 <div class="swamp__cards block23 ">
                     <div class="swamp__img ">
-
                         <div><img src="./assets/img/nature/swamp-bird.jpg" alt="фотография "></div>
-
-
                     </div>
                     <div class="swamp__text-title">
                         <h3 class="swamp__h3">Ольманские болота</h3>
@@ -154,8 +155,6 @@
                                 <b>ГЛХУ «Полесский лесхоз»</b></a>
                         </p>
                     </div>
-
-
                 </div>
             </div>
 
@@ -177,8 +176,7 @@
                             островные ельники,
                             иногда болота перемежаются песчаными холмами и&nbsp;дюнами &laquo;полесского&raquo; типа
                             с&nbsp;сосновыми борами.
-
-
+                        </p>
                         <p class="swamp__text-text">
                             Имеющиеся маршруты: экологический пешеходный маршрут &laquo;Ландшафтный&raquo;,
                             экологический
@@ -188,8 +186,7 @@
                             автомобильно-пешеходный
                             (автомобильный, пешеходный, велосипедный) маршрут &laquo;Пойменный&raquo;, экологический
                             водный маршрут
-                            по&nbsp;реке Припять на&nbsp;прогулочном теплоходе и&nbsp;др. </p>
-
+                            по&nbsp;реке Припять на&nbsp;прогулочном теплоходе и&nbsp;др.
                         </p>
                         <p class="swamp__text-text">
                             Гомельская обл., Лельчицкий р-н
@@ -200,8 +197,9 @@
                     <div class="swamp__img">
                         <img src="./assets/img/nature/swamp-field.jpg" alt="">
                     </div>
-
                 </div>
+            </div>
+        </div>
     </section>
     <div class="swamp__img slick__slider">
 
@@ -209,7 +207,6 @@
         <div><img src="./assets/img/nature/swamp_1280-1.jpg" alt="фотография " width="1280" height="853"></div>
         <div><img src="./assets/img/nature/swamp_1280-2.jpg" alt="фотография " width="1280" height="853"></div>
         <div><img src="./assets/img/nature/swamp_1280-3.jpg" alt="фотография " width="1280" height="853"></div>
-        <!-- <div><img src="./assets/img/nature/swamp_1280-4.jpg" alt="фотография " width="1280" height="853"></div> -->
         <div><img src="./assets/img/nature/swamp_1280-5.jpg" alt="фотография " width="1280" height="853"></div>
         <div><img src="./assets/img/nature/swamp_1280-6.jpg" alt="фотография " width="1280" height="853"></div>
         <div><img src="./assets/img/nature/swamp_1280-7.jpg" alt="фотография " width="1280" height="853"></div>
@@ -223,15 +220,17 @@
         <div class="container">
             <div class="swamp__inner">
                 <h2 class="swamp__title"> МЕЛОВЫЕ КАРЬЕРЫ</h2>
-                <p>Меловые карьеры, белорусские &laquo;мальдивы&raquo;... крайне опасные и&nbsp;притягивающие
+                <p class="swamp__text-text">Меловые карьеры, белорусские &laquo;мальдивы&raquo;... крайне опасные
+                    и&nbsp;притягивающие
                     к&nbsp;себе объекты техногенного
                     происхождения. Исторически наиболее
                     юные приробные объекты, которые образовались при затоплении карьеров после выработки меловых
                     отложений.Берега на&nbsp;&laquo;Мальдивах&raquo; крутые,
-                    иногда вертикальные, крайне скользкие и&nbsp;мягкие из-за глины.</p>
+                    иногда вертикальные, крайне скользкие и&nbsp;мягкие из-за глины.
+                </p>
                 <div class="swamp__cards">
                     <div class="swamp__text-title">
-                        <h3 class="swamp__h3">Красносельскте меловые карьеры</h3>
+                        <h3 class="swamp__h3">Красносельские меловые карьеры</h3>
                         <p class="swamp__text-text">
                             Самые крупные меловые карьеры в&nbsp;Беларуси. С&nbsp;десяток лет назад кто-то сравнил
                             их&nbsp;с&nbsp;островным
@@ -243,7 +242,6 @@
                             в&nbsp;длину.
                             Глубина там
                             действительно пугает&nbsp;&mdash; в&nbsp;некоторых местах она достигает 30&nbsp;метров.
-
                         </p>
                         <p class="swamp__text-text">
                             Совсем рядом с Волковыском расположился город Мосты, где можно погулять <a
@@ -261,7 +259,6 @@
                     <div class="swamp__img">
                         <img src="./assets/img/nature/limePit_volkovisk.jpg" alt="">
                     </div>
-
                 </div>
             </div>
 
@@ -296,15 +293,14 @@
                             можно заехать на <a class="nature__links" target="_blank"
                                 href="https://www.google.com/search?sxsrf=ALeKk00CSSSzAx2QNDCjCNZRIaxNzRD22w:1610280442003&source=univ&tbm=isch&q=%D1%81%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B5+%D1%82%D0%B5%D1%80%D1%80%D0%B8%D0%BA%D0%BE%D0%BD%D1%8B&sa=X&ved=2ahUKEwjKvO-NqpHuAhXKxIsKHcoYBa0QjJkEegQIBBAB&biw=1853&bih=888">Солигорские
                                 терриконы</a>, они находятся в 30 км. А через Солигорск
-                            и в Минск удобно будет вернуться. </p>
+                            и в Минск удобно будет вернуться.
+                        </p>
                         <p>
                             <a class="nature__links" target="_blank"
                                 href="https://www.google.com/maps/dir/53.8813444,27.5147034/52.8718263,27.8648518/@53.3523279,27.1125289,9z/data=!3m1!4b1!4m5!4m4!1m1!4e1!1m0!3e0?hl=en">
                                 Mаршрут: Деревня Хотиново, Любанский район, Минская область</a>
                         </p>
                     </div>
-
-
                 </div>
             </div>
 
@@ -323,12 +319,11 @@
                             колотушки. Мел из&nbsp;здешних карьеров продавали не&nbsp;только по&nbsp;всей Польше,
                             но&nbsp;и&nbsp;поставляли за
                             границу.
-
                             Уже в&nbsp;послевоенное время в&nbsp;Березе был построен известковый завод и&nbsp;добыча
                             мела приобрела
                             промышленные масштабы. Те&nbsp;карьеры, что мы&nbsp;видим сегодня,&nbsp;&mdash; результат
                             деятельности завода.
-
+                        </p>
                         <p class="swamp__text-text">
                             Карьеров вблизи Березы несколько. Самый живописный из&nbsp;них, который еще сохранил
                             заветный
@@ -342,10 +337,7 @@
                             Один из самых "безопасных" карьеров -уровень опасности купания в нем оценивается как
                             <b>средний</b>.
                         </p>
-
-                        </p>
                         <p>
-
                             <a class="nature__links" target="_blank"
                                 href="https://www.google.com/maps/dir//Biaroza+District/@52.4992932,24.7220059,14.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4720c776c5adff09:0x2d8ecbb707743e0b!2m2!1d24.7399355!2d52.4953069!3e0?hl=en">
                                 Маршрут к меловым карьерам у д.Кабаки</a>
@@ -354,8 +346,9 @@
                     <div class="swamp__img">
                         <img src="./assets/img/nature/limePit_kabaki.jpg" alt="">
                     </div>
-
                 </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -363,7 +356,10 @@
             <nav class="footer__navigation">
                 <div class="navigation__logo">
                     <a href="index.html">
-                        <img src="./assets/img/header/logo-white.png" alt="logo" width="150" height="70">
+                        <picture>
+                            <source media="(max-width: 1023px)" srcset="./assets/img/header/logo-mobile.png">
+                            <img src="./assets/img/header/logo.png" alt="logo" width="250" height="125">
+                        </picture>
                     </a>
                 </div>
                 <ul class="footer__navigation__links">
@@ -406,7 +402,7 @@
             </section>
         </div>
         <div class="footer__bottom container">
-            <p class="footer__copyright"> © 2020—2021 Incredible Belarus</p>
+          <p class="footer__copyright"> © 2020—2021 Разработчики: Анастасия Иванова, Алексей Фокин, Арсений Маслов</p>
             <a class="footer__bottom-anchor js-up-btn" href="#">Наверх</a>
         </div>
     </footer>

@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 600px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   background: linear-gradient(
       rgba(0, 0, 0, 0.3), 
       rgba(0, 0, 0, 0.3)
@@ -16,76 +16,102 @@
   flex-wrap: wrap;
 }
 
-
 .castles-block__content {
-  /* padding-top: 50px; */
   padding-bottom: 50px;
 }
 
 .castles-block__title {
   width: 100%;
-  padding-top: 60px;
-  margin: 0 0 50px 0;
+  padding-top: 280px;
+  margin: 0 0 70px 0;
   color: #fff;
-  font-size: 35px;
-  line-height: 40px;
-  text-align: center;
+  font-family: "Spectral SC", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.castles-block__teaser p {
+  position: relative;
+  width: 80%;
+  margin: 0 0 44px;
+  padding: 0 0 0 92px;
+  font-size: 34px;
+  line-height: 38px;
+  text-transform: none;
+  text-align: left;
+  color: #fff;
+}
+
+.castles-block__teaser p::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 2px;
+  background-color: #fff;
+  top: 17px;
+  left: -2px;
 }
 
 .castles-block__list {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 0 0 0 auto;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.castles-block__list li {
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .castles-block__link {
-  position: relative;
+  text-align: center;
   display: inline-block;
-  margin-bottom: 50px;
-  outline: none;
-  color: #fff;
+  position: relative;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  text-shadow: 0 0 1px rgba(255,255,255,0.3);
-  font-size: 1.35em;
-  line-height: 2em;
-  cursor: pointer;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: #7db6f7;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 20px 0px;
+  width: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
 }
- 
-.castles-block__link::before, .castles-block__link::after {
+
+.castles-block__link::before {
+  content: "";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  border: 2px solid rgba(243, 246, 249, 0.1);
-  border-radius: 50%;
-  content: '';
-  opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
-  transform: translateX(-50%) translateY(-50%) scale(0.2);
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: #7db6f7;
+  color: #fff;
+  border-radius: 0 50% 50% 0;
+  transform: scale(0, 1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
 }
 
-.castles-block__link::after {
-  width: 90px;
-  height: 90px;
-  border-width: 6px;
-  transform: translateX(-50%) translateY(-50%) scale(0.8);
+.castles-block__link:hover {
+  color: #180364;
+  background-color: #fff;
 }
 
-
-.castles-block__link:hover::before, .castles-block__link:hover::after, .castles-block__link:focus::before, .castles-block__link:focus::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-.castles-block__link:hover::before, .castles-block__link:hover::after, .castles-block__link:focus::before, .castles-block__link:focus::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(-50%) scale(1);
+.castles-block__link:hover::before {
+  transform: scale(1, 1);
+  text-indent: 0;
 }
 
 .castles-block__item {
@@ -160,6 +186,10 @@
 }
 
 @media (max-width: 1023px) {
+  .castles-block__title {
+    padding-top: 150px;
+  }
+
   .castles-block__img {
     width: 100%;
     margin-bottom: 10px;
@@ -178,11 +208,21 @@
 
 @media (max-width: 767px) {
   .castles-block__title {
-    top: 3%;
-    left: 5%;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 28px;
     text-align: center;
+  }
+
+  .castles-block__teaser p {
+    width: 100%;
+    padding-left: 45px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .castles-block__teaser p::before {
+    width: 32px;
+    left: 4px;
   }
 
   .castles-block__teaser {
@@ -192,6 +232,14 @@
   .castles-block__content {
     padding-bottom: 15px;
   }
+
+  .castles-block__list {
+    justify-content: center;
+  }
+
+  /* .castles-block__list li {
+    margin-right: 0;
+  } */
 
   .castles-block__item {
     margin-bottom: 20px;
