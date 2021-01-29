@@ -114,15 +114,11 @@ padding: 15px 25px;
   width: 100%;
   margin-bottom: 15px;
 
-  min-height: 600px;
-  background-image: url(../assets/img/nature/nature_main_1920.jpg);
+  min-height: 580px;
+  background-image: url(../assets/img/nature/nature_main_1920-1.jpg);
   background-position: center;
 }
 
-/* .nature-block__teaser img {
-  width: 100%;
-  height: auto;
-} */
 
 .nature-block__title {
   position: absolute;
